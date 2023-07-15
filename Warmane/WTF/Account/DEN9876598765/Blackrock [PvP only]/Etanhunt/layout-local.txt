@@ -1,0 +1,15 @@
+Version: 1
+Frame: CharacterFrame
+FrameLevel: 26
+Anchor: LEFT
+X: 0
+Y: 67
+W: 384
+H: 512
+Frame: MerchantFrame
+FrameLevel: 22
+Anchor: LEFT
+X: 3
+Y: 46
+W: 384
+H: 512

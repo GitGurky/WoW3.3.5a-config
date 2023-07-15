@@ -1,0 +1,113 @@
+MACRO 16 "#0mArenaSaerch" INV_Misc_QuestionMark
+/targetenemyplayer [@arena2, noexists]
+/stopmacro [@arena2, noexists]
+/click [@focus, noexists] BT4Button98; click [@target, noexists] BT4Button99; click [] BT4Button100
+END
+MACRO 17 "#1mFocus" INV_Misc_QuestionMark
+/focus [@target]
+/target [@arena1]
+/target [@arena2]
+/target [@focus]
+/targetlasttarget
+/focus [@target]
+/targetlasttarget
+END
+MACRO 18 "#2mTarget" INV_Misc_QuestionMark
+/target [@focus]
+/target [@arena1]
+/target [@arena2]
+/target [@focus]
+/targetlasttarget
+END
+MACRO 19 "#3mSwitchTF" INV_Misc_QuestionMark
+/target [@focus]
+/targetlasttarget
+/focus
+/targetlasttarget
+END
+MACRO 10 "#Quartz" Spell_Fire_SunKey
+/quartz
+END
+MACRO 7 "#SUF" Spell_Fire_SunKey
+/suf
+END
+MACRO 9 "#TPTP" Spell_Fire_SunKey
+/tptp
+END
+MACRO 29 "3v3 lf" Ability_Creature_Disease_04
+/5 dlock lf 3s
+END
+MACRO 20 "ArenaIn" Ability_Vehicle_PlayerLoaded
+/run JoinBattlefield(1,1,1)
+/run AccpetBattlefieldPort(1,1)
+/click StaticPopup1Button1
+END
+MACRO 14 "ArenaOut" Ability_Vehicle_LoadSelfCatapult
+/forfeit
+/run LeaveBattlefield()
+/tar Schembari
+END
+MACRO 22 "ArenaReg" Ability_Vehicle_RocketBoost
+/run JoinBattlefield(1,1,1)
+END
+MACRO 23 "BG1" INV_Misc_QuestionMark
+/script RepopMe()
+/script AcceptAreaSpiritHeal()
+/script JoinBattlefield(1, asGroup)
+/script AcceptBattlefieldPort(1,1)
+/script AcceptBattlefieldPort(2,1)
+/cast [nomounted] Dreadsteed
+END
+MACRO 24 "BG2" INV_Misc_QuestionMark
+/stopmacro [target=focus, dead]
+/targetfriendplayer [nodead]
+/follow
+END
+MACRO 25 "BG3" INV_Misc_QuestionMark
+/targetenemyplayer
+/castsequence reset=6 Curse of Agony, Corruption, Corruption
+/script TogglePVPFrame();
+/focus Asummi
+END
+MACRO 26 "BG4" INV_Misc_QuestionMark
+/focus Asummi
+END
+MACRO 28 "chat" Spell_Shaman_Hex
+/5 I am looking for a good English speaker for educational conversations, in exchange for up-to-date Russia-Ukraine news
+END
+MACRO 15 "LF" Spell_unused2
+/join global
+/5 dlock lf 2s  my team
+/bg Destro lf shama or heal 2s
+END
+MACRO 11 "maunt" Ability_Mount_Dreadsteed
+/petpassive
+/petfollow
+/use Lesser Invisibility`
+/use [@player] Detect Invisibility
+/use Dreadsteed
+END
+MACRO 27 "mmr lose" Ability_Creature_Cursed_03
+/join global
+/5 need partner for lowering mmr 2s
+END
+MACRO 12 "petAttack" Ability_Druid_ChallangingRoar
+/petattack [@mouseover, harm][]
+END
+MACRO 21 "petclick" INV_Misc_QuestionMark
+/dismount
+/petpassive
+/click  [mod:shift, @focus][@mouseover, harm][] BT4PetButton4
+/petattack [mod:shift, @focus][@mouseover, harm][]
+/use [mod:shift, @focus][@mouseover, harm][]Banish
+END
+MACRO 13 "petStay" Ability_Druid_Cower
+/petpassive
+/petstay
+END
+MACRO 8 "Reload" Spell_Nature_AstralRecal
+/reload
+END
+MACRO 30 "WA" INV_Misc_QuestionMark
+/weakauras
+END
