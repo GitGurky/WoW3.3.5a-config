@@ -13,10 +13,10 @@ BlizzMoveDB = {
 			["xOfs"] = 0,
 		},
 		["relativePoint"] = "LEFT",
-		["yOfs"] = 12.93813478317928,
-		["xOfs"] = 214.1234798627961,
-		["save"] = true,
+		["yOfs"] = 16.09865269615666,
+		["xOfs"] = 238.6173249086637,
 		["point"] = "LEFT",
+		["save"] = true,
 	},
 	["AuctionFrame"] = {
 		["save"] = true,
@@ -25,7 +25,18 @@ BlizzMoveDB = {
 	},
 	["GameMenuFrame"] = {
 	},
-	["HelpFrame"] = {
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "BOTTOM",
+		["yOfs"] = -18.22246163834899,
+		["xOfs"] = 14.22227753990036,
+		["point"] = "BOTTOM",
 	},
 	["CharacterFrame"] = {
 		["default"] = {
@@ -54,8 +65,8 @@ BlizzMoveDB = {
 			["xOfs"] = 383.9999912464334,
 		},
 		["relativePoint"] = "LEFT",
-		["yOfs"] = 62.71607936503269,
-		["xOfs"] = 50.56790145070535,
+		["yOfs"] = 67.45680097760926,
+		["xOfs"] = 98.76544209512241,
 		["point"] = "LEFT",
 	},
 	["BarberShopFrame"] = {
@@ -73,8 +84,8 @@ BlizzMoveDB = {
 		["relativePoint"] = "CENTER",
 		["yOfs"] = 59.23457144555101,
 		["xOfs"] = -74.07390650000879,
-		["save"] = true,
 		["point"] = "CENTER",
+		["save"] = true,
 	},
 	["BankFrame"] = {
 	},
@@ -102,10 +113,10 @@ BlizzMoveDB = {
 		["relativePoint"] = "LEFT",
 		["yOfs"] = 46.12346618534816,
 		["xOfs"] = 3.160491652277422,
-		["save"] = true,
 		["point"] = "LEFT",
+		["save"] = false,
 	},
-	["GossipFrame"] = {
+	["KeyBindingFrame"] = {
 	},
 	["DressUpFrame"] = {
 		["default"] = {
@@ -122,7 +133,8 @@ BlizzMoveDB = {
 	},
 	["LFDParentFrame"] = {
 	},
-	["VideoOptionsFrame"] = {
+	["GuildBankFrame"] = {
+		["save"] = true,
 	},
 	["PlayerTalentFrame"] = {
 	},
@@ -141,12 +153,11 @@ BlizzMoveDB = {
 		["xOfs"] = 30.81481959685586,
 		["point"] = "LEFT",
 	},
-	["GuildBankFrame"] = {
-		["save"] = true,
+	["VideoOptionsFrame"] = {
 	},
 	["ItemSocketingFrame"] = {
 	},
-	["KeyBindingFrame"] = {
+	["GossipFrame"] = {
 	},
 	["QuestFrame"] = {
 	},
@@ -155,17 +166,6 @@ BlizzMoveDB = {
 	["CalendarFrame"] = {
 		["save"] = true,
 	},
-	["InterfaceOptionsFrame"] = {
-		["default"] = {
-			["relativeTo"] = "UIParent",
-			["point"] = "CENTER",
-			["relativePoint"] = "CENTER",
-			["yOfs"] = 0,
-			["xOfs"] = 0,
-		},
-		["relativePoint"] = "BOTTOM",
-		["yOfs"] = -18.22246163834899,
-		["xOfs"] = 14.22227753990036,
-		["point"] = "BOTTOM",
+	["HelpFrame"] = {
 	},
 }

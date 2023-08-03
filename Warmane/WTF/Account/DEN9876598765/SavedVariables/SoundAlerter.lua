@@ -10,9 +10,9 @@ sadb = {
 		["Fafhesifdj - Blackrock [PvP only]"] = "Default",
 		["Fsdfqfd - Blackrock [PvP only]"] = "Default",
 		["Wheretotem - Blackrock [PvP only]"] = "Default",
-		["Testcloth - Blackrock [PvP only]"] = "Default",
-		["Gadig - Blackrock [PvP only]"] = "Default",
 		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
+		["Gadig - Blackrock [PvP only]"] = "Default",
+		["Testcloth - Blackrock [PvP only]"] = "Default",
 		["Ffwefsf - Blackrock [PvP only]"] = "Default",
 	},
 	["profiles"] = {

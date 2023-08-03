@@ -1,6 +1,6 @@
 Version: 1
 Frame: InterfaceOptionsFrame
-FrameLevel: 13
+FrameLevel: 6
 Anchor: CENTER
 X: 0
 Y: 0

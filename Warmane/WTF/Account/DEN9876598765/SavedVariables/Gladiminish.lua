@@ -10,9 +10,9 @@ GladiminishDB = {
 		["Fafhesifdj - Blackrock [PvP only]"] = "Fafhesifdj - Blackrock [PvP only]",
 		["Fsdfqfd - Blackrock [PvP only]"] = "Fsdfqfd - Blackrock [PvP only]",
 		["Wheretotem - Blackrock [PvP only]"] = "Wheretotem - Blackrock [PvP only]",
-		["Testcloth - Blackrock [PvP only]"] = "Testcloth - Blackrock [PvP only]",
-		["Gadig - Blackrock [PvP only]"] = "Gadig - Blackrock [PvP only]",
 		["Fsfqfweff - Blackrock [PvP only]"] = "Fsfqfweff - Blackrock [PvP only]",
+		["Gadig - Blackrock [PvP only]"] = "Gadig - Blackrock [PvP only]",
+		["Testcloth - Blackrock [PvP only]"] = "Testcloth - Blackrock [PvP only]",
 		["Ffwefsf - Blackrock [PvP only]"] = "Ffwefsf - Blackrock [PvP only]",
 	},
 	["profiles"] = {
@@ -34,11 +34,11 @@ GladiminishDB = {
 		},
 		["Wheretotem - Blackrock [PvP only]"] = {
 		},
-		["Testcloth - Blackrock [PvP only]"] = {
+		["Fsfqfweff - Blackrock [PvP only]"] = {
 		},
 		["Gadig - Blackrock [PvP only]"] = {
 		},
-		["Fsfqfweff - Blackrock [PvP only]"] = {
+		["Testcloth - Blackrock [PvP only]"] = {
 		},
 		["Ffwefsf - Blackrock [PvP only]"] = {
 		},

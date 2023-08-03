@@ -6,45 +6,45 @@ Bartender4DB = {
 				["Asummi - Blackrock [PvP only]"] = {
 					["actionbars"] = {
 						{
-							["fadeoutalpha"] = 0.3499999940395355,
-							["version"] = 3,
 							["fadeout"] = true,
+							["fadeoutalpha"] = 0.1000000014901161,
+							["version"] = 3,
 							["position"] = {
-								["y"] = 29.39999806318898,
-								["x"] = 267.1926675048503,
+								["y"] = 113.39998552659,
+								["x"] = 268.3257641671248,
 								["point"] = "BOTTOM",
 								["scale"] = 0.699999988079071,
 							},
 						}, -- [1]
 						{
-							["fadeoutalpha"] = 0.300000011920929,
-							["version"] = 3,
 							["fadeout"] = true,
+							["version"] = 3,
+							["fadeoutalpha"] = 0.2000000029802322,
 							["position"] = {
-								["y"] = 57.40000409681691,
-								["x"] = 267.1926675048503,
+								["y"] = 29.39999806318898,
+								["x"] = 268.1989004785257,
 								["point"] = "BOTTOM",
 								["scale"] = 0.699999988079071,
 							},
 						}, -- [2]
 						{
-							["fadeoutalpha"] = 0.25,
-							["version"] = 3,
 							["fadeout"] = true,
+							["version"] = 3,
+							["fadeoutalpha"] = 0.1500000059604645,
 							["position"] = {
-								["y"] = 85.39999787545173,
-								["x"] = 267.1926675048503,
+								["y"] = 57.40000409681691,
+								["x"] = 268.3254700472903,
 								["point"] = "BOTTOM",
 								["scale"] = 0.699999988079071,
 							},
 						}, -- [3]
 						{
-							["fadeoutalpha"] = 0.2000000029802322,
-							["version"] = 3,
 							["fadeout"] = true,
+							["version"] = 3,
+							["fadeoutalpha"] = 0.1000000014901161,
 							["position"] = {
-								["y"] = 113.39998552659,
-								["x"] = 267.1926675048503,
+								["y"] = 85.39999787545173,
+								["x"] = 268.3256661271798,
 								["point"] = "BOTTOM",
 								["scale"] = 0.699999988079071,
 							},
@@ -68,20 +68,21 @@ Bartender4DB = {
 							},
 						}, -- [6]
 						{
-							["enabled"] = true,
 							["fadeout"] = true,
+							["enabled"] = true,
+							["fadeoutalpha"] = 0.1000000014901161,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 41.99999357159949,
 								["x"] = -2.999970388325314,
 								["point"] = "BOTTOMLEFT",
 							},
-							["version"] = 3,
-							["fadeoutalpha"] = 0.5,
 						}, -- [7]
 						{
-							["enabled"] = true,
-							["version"] = 3,
 							["fadeout"] = true,
+							["enabled"] = true,
+							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 2.999882305560846,
 								["x"] = -2.999970388325314,
@@ -109,9 +110,9 @@ Bartender4DB = {
 				["mk1"] = {
 					["actionbars"] = {
 						{
-							["fadeoutalpha"] = 0.5,
 							["fadeout"] = true,
 							["version"] = 3,
+							["fadeoutalpha"] = 0.5,
 							["position"] = {
 								["y"] = 29.39999806318898,
 								["x"] = 267.1926675048503,
@@ -120,9 +121,9 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.5,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 57.40000409681691,
 								["x"] = 267.1926675048503,
@@ -131,9 +132,9 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.5,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 85.39999787545173,
 								["x"] = 267.1926675048503,
@@ -142,9 +143,9 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.5,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 113.39998552659,
 								["x"] = 267.1926675048503,
@@ -178,8 +179,8 @@ Bartender4DB = {
 								["x"] = -2.999970388325314,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutalpha"] = 0.5,
 							["version"] = 3,
+							["fadeoutalpha"] = 0.5,
 						}, -- [7]
 						{
 							["enabled"] = true,
@@ -211,9 +212,9 @@ Bartender4DB = {
 				["Default"] = {
 					["actionbars"] = {
 						{
-							["fadeout"] = true,
-							["version"] = 3,
 							["fadeoutalpha"] = 0.3499999940395355,
+							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 29.39999806318898,
 								["x"] = 267.1926675048503,
@@ -222,9 +223,9 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
-							["fadeout"] = true,
-							["version"] = 3,
 							["fadeoutalpha"] = 0.300000011920929,
+							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 57.40000409681691,
 								["x"] = 267.1926675048503,
@@ -233,9 +234,9 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["fadeout"] = true,
-							["version"] = 3,
 							["fadeoutalpha"] = 0.25,
+							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 85.39999787545173,
 								["x"] = 267.1926675048503,
@@ -244,9 +245,9 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["fadeout"] = true,
-							["version"] = 3,
 							["fadeoutalpha"] = 0.2000000029802322,
+							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 113.39998552659,
 								["x"] = 267.1926675048503,
@@ -273,19 +274,19 @@ Bartender4DB = {
 							},
 						}, -- [6]
 						{
-							["fadeout"] = true,
 							["enabled"] = true,
-							["version"] = 3,
-							["fadeoutalpha"] = 0.5,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 41.99999357159949,
 								["x"] = -2.999970388325314,
 								["point"] = "BOTTOMLEFT",
 							},
+							["fadeoutalpha"] = 0.5,
+							["version"] = 3,
 						}, -- [7]
 						{
-							["fadeout"] = true,
 							["enabled"] = true,
+							["fadeout"] = true,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 2.999882305560846,
@@ -314,9 +315,9 @@ Bartender4DB = {
 				["MAGE"] = {
 					["actionbars"] = {
 						{
-							["fadeoutalpha"] = 0.3499999940395355,
 							["fadeout"] = true,
 							["version"] = 3,
+							["fadeoutalpha"] = 0.3499999940395355,
 							["position"] = {
 								["y"] = 29.39999806318898,
 								["x"] = 267.1926675048503,
@@ -325,9 +326,9 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.300000011920929,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 57.40000409681691,
 								["x"] = 267.1926675048503,
@@ -336,9 +337,9 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.25,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 85.39999787545173,
 								["x"] = 267.1926675048503,
@@ -347,9 +348,9 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["version"] = 3,
 							["fadeout"] = true,
 							["fadeoutalpha"] = 0.2000000029802322,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 113.39998552659,
 								["x"] = 267.1926675048503,
@@ -383,13 +384,13 @@ Bartender4DB = {
 								["x"] = -2.999970388325314,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutalpha"] = 0.5,
 							["version"] = 3,
+							["fadeoutalpha"] = 0.5,
 						}, -- [7]
 						{
 							["enabled"] = true,
-							["fadeout"] = true,
 							["version"] = 3,
+							["fadeout"] = true,
 							["position"] = {
 								["y"] = 2.999882305560846,
 								["x"] = -2.999970388325314,
@@ -415,6 +416,64 @@ Bartender4DB = {
 					},
 				},
 				["Fsfqfweff - Blackrock [PvP only]"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -205.0000049922685,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [1]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -189.5000120019606,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -151.5000088561475,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [3]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -113.5000407246012,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [4]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -75.50007259305471,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["position"] = {
+								["y"] = -37.50006944724169,
+								["x"] = -231.4999399218102,
+								["point"] = "CENTER",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						[9] = {
+						},
+						[10] = {
+						},
+					},
+				},
+				["Acumii - Blackrock [PvP only]"] = {
 					["actionbars"] = {
 						{
 							["version"] = 3,
@@ -544,8 +603,8 @@ Bartender4DB = {
 								["x"] = -2.999970388325314,
 								["point"] = "BOTTOMLEFT",
 							},
-							["fadeoutalpha"] = 0.5,
 							["version"] = 3,
+							["fadeoutalpha"] = 0.5,
 						}, -- [7]
 						{
 							["enabled"] = true,
@@ -573,64 +632,6 @@ Bartender4DB = {
 								["point"] = "CENTER",
 							},
 						}, -- [10]
-					},
-				},
-				["Acumii - Blackrock [PvP only]"] = {
-					["actionbars"] = {
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -205.0000049922685,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [1]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -189.5000120019606,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -151.5000088561475,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [3]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -113.5000407246012,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [4]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -75.50007259305471,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [5]
-						{
-							["version"] = 3,
-							["position"] = {
-								["y"] = -37.50006944724169,
-								["x"] = -231.4999399218102,
-								["point"] = "CENTER",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						[9] = {
-						},
-						[10] = {
-						},
 					},
 				},
 			},
@@ -638,16 +639,16 @@ Bartender4DB = {
 		["MicroMenu"] = {
 			["profiles"] = {
 				["Asummi - Blackrock [PvP only]"] = {
-					["version"] = 3,
+					["fadeout"] = true,
+					["rows"] = 2,
+					["fadeoutalpha"] = 0.300000011920929,
 					["position"] = {
 						["y"] = 67.05000614181888,
 						["x"] = -118.3500843243699,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 0.9000000357627869,
 					},
-					["rows"] = 2,
-					["fadeoutalpha"] = 0.5,
-					["fadeout"] = true,
+					["version"] = 3,
 				},
 				["mk1"] = {
 					["fadeoutalpha"] = 0.5,
@@ -658,12 +659,10 @@ Bartender4DB = {
 						["scale"] = 0.9000000357627869,
 					},
 					["rows"] = 2,
-					["version"] = 3,
 					["fadeout"] = true,
+					["version"] = 3,
 				},
 				["Default"] = {
-					["version"] = 3,
-					["rows"] = 2,
 					["fadeoutalpha"] = 0.5,
 					["position"] = {
 						["y"] = 67.05000614181888,
@@ -671,6 +670,8 @@ Bartender4DB = {
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 0.9000000357627869,
 					},
+					["rows"] = 2,
+					["version"] = 3,
 					["fadeout"] = true,
 				},
 				["MAGE"] = {
@@ -682,8 +683,8 @@ Bartender4DB = {
 						["scale"] = 0.9000000357627869,
 					},
 					["rows"] = 2,
-					["fadeout"] = true,
 					["fadeoutalpha"] = 0.5,
+					["fadeout"] = true,
 				},
 				["Fsfqfweff - Blackrock [PvP only]"] = {
 					["version"] = 3,
@@ -694,18 +695,6 @@ Bartender4DB = {
 						["y"] = 42.40001492255829,
 					},
 				},
-				["Etanhunt - Blackrock [PvP only]"] = {
-					["fadeoutalpha"] = 0.5,
-					["position"] = {
-						["y"] = 67.05000614181888,
-						["x"] = -118.3500843243699,
-						["point"] = "BOTTOMRIGHT",
-						["scale"] = 0.9000000357627869,
-					},
-					["rows"] = 2,
-					["version"] = 3,
-					["fadeout"] = true,
-				},
 				["Acumii - Blackrock [PvP only]"] = {
 					["version"] = 3,
 					["position"] = {
@@ -714,6 +703,18 @@ Bartender4DB = {
 						["point"] = "CENTER",
 						["scale"] = 0.800000011920929,
 					},
+				},
+				["Etanhunt - Blackrock [PvP only]"] = {
+					["fadeout"] = true,
+					["position"] = {
+						["y"] = 67.05000614181888,
+						["x"] = -118.3500843243699,
+						["point"] = "BOTTOMRIGHT",
+						["scale"] = 0.9000000357627869,
+					},
+					["rows"] = 2,
+					["version"] = 3,
+					["fadeoutalpha"] = 0.5,
 				},
 			},
 		},
@@ -737,16 +738,16 @@ Bartender4DB = {
 		["BagBar"] = {
 			["profiles"] = {
 				["Asummi - Blackrock [PvP only]"] = {
-					["fadeoutalpha"] = 0.5,
+					["fadeoutalpha"] = 0.300000011920929,
+					["fadeout"] = true,
+					["onebag"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 112.4408189523847,
 						["x"] = -46.80005087657833,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1.300000071525574,
 					},
-					["onebag"] = true,
-					["fadeout"] = true,
-					["version"] = 3,
 				},
 				["mk1"] = {
 					["fadeoutalpha"] = 0.5,
@@ -757,20 +758,20 @@ Bartender4DB = {
 						["scale"] = 1.300000071525574,
 					},
 					["onebag"] = true,
-					["fadeout"] = true,
 					["version"] = 3,
+					["fadeout"] = true,
 				},
 				["Default"] = {
-					["version"] = 3,
 					["fadeout"] = true,
-					["onebag"] = true,
-					["fadeoutalpha"] = 0.5,
 					["position"] = {
 						["y"] = 112.4408189523847,
 						["x"] = -46.80005087657833,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1.300000071525574,
 					},
+					["onebag"] = true,
+					["version"] = 3,
+					["fadeoutalpha"] = 0.5,
 				},
 				["MAGE"] = {
 					["fadeout"] = true,
@@ -781,10 +782,18 @@ Bartender4DB = {
 						["scale"] = 1.300000071525574,
 					},
 					["onebag"] = true,
-					["version"] = 3,
 					["fadeoutalpha"] = 0.5,
+					["version"] = 3,
 				},
 				["Fsfqfweff - Blackrock [PvP only]"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 1.500011181313653,
+						["x"] = 58.50008592856636,
+						["point"] = "CENTER",
+					},
+				},
+				["Acumii - Blackrock [PvP only]"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 1.500011181313653,
@@ -801,81 +810,8 @@ Bartender4DB = {
 						["scale"] = 1.300000071525574,
 					},
 					["onebag"] = true,
+					["version"] = 3,
 					["fadeout"] = true,
-					["version"] = 3,
-				},
-				["Acumii - Blackrock [PvP only]"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 1.500011181313653,
-						["x"] = 58.50008592856636,
-						["point"] = "CENTER",
-					},
-				},
-			},
-		},
-		["StanceBar"] = {
-			["profiles"] = {
-				["Asummi - Blackrock [PvP only]"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 203.2062591284142,
-						["x"] = -203.3410115334395,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["mk1"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 203.2062591284142,
-						["x"] = -203.3410115334395,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Default"] = {
-					["position"] = {
-						["y"] = 203.2062591284142,
-						["x"] = -203.3410115334395,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-					["version"] = 3,
-				},
-				["MAGE"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 203.2062591284142,
-						["x"] = -203.3410115334395,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Fsfqfweff - Blackrock [PvP only]"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 14.25003619394647,
-						["x"] = -111.7499051298021,
-						["point"] = "CENTER",
-					},
-				},
-				["Etanhunt - Blackrock [PvP only]"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 203.2062591284142,
-						["x"] = -203.3410115334395,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Acumii - Blackrock [PvP only]"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99999801677006,
-						["x"] = -82.49992344048542,
-						["point"] = "CENTER",
-					},
 				},
 			},
 		},
@@ -921,6 +857,14 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Acumii - Blackrock [PvP only]"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 51.49992870630285,
+						["x"] = 53.50004865752089,
+						["point"] = "CENTER",
+					},
+				},
 				["Etanhunt - Blackrock [PvP only]"] = {
 					["version"] = 3,
 					["position"] = {
@@ -929,12 +873,69 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+			},
+		},
+		["StanceBar"] = {
+			["profiles"] = {
+				["Asummi - Blackrock [PvP only]"] = {
+					["position"] = {
+						["y"] = 203.2062591284142,
+						["x"] = -203.3410115334395,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+					["version"] = 3,
+				},
+				["mk1"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 203.2062591284142,
+						["x"] = -203.3410115334395,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Default"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 203.2062591284142,
+						["x"] = -203.3410115334395,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["MAGE"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 203.2062591284142,
+						["x"] = -203.3410115334395,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
+				["Fsfqfweff - Blackrock [PvP only]"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 14.25003619394647,
+						["x"] = -111.7499051298021,
+						["point"] = "CENTER",
+					},
+				},
 				["Acumii - Blackrock [PvP only]"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 51.49992870630285,
-						["x"] = 53.50004865752089,
+						["y"] = -14.99999801677006,
+						["x"] = -82.49992344048542,
 						["point"] = "CENTER",
+					},
+				},
+				["Etanhunt - Blackrock [PvP only]"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 203.2062591284142,
+						["x"] = -203.3410115334395,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
 					},
 				},
 			},
@@ -944,18 +945,18 @@ Bartender4DB = {
 				["Asummi - Blackrock [PvP only]"] = {
 					["fadeout"] = true,
 					["version"] = 3,
-					["fadeoutalpha"] = 0.2000000029802322,
 					["position"] = {
 						["y"] = 140.4999849762868,
 						["x"] = 298.7519905968079,
 						["point"] = "BOTTOM",
 						["scale"] = 0.800000011920929,
 					},
+					["fadeoutalpha"] = 0.1500000059604645,
 				},
 				["mk1"] = {
-					["fadeoutalpha"] = 0.5,
 					["version"] = 3,
 					["fadeout"] = true,
+					["fadeoutalpha"] = 0.5,
 					["position"] = {
 						["y"] = 140.4999849762868,
 						["x"] = 298.7519905968079,
@@ -964,20 +965,20 @@ Bartender4DB = {
 					},
 				},
 				["Default"] = {
-					["fadeoutalpha"] = 0.2000000029802322,
 					["fadeout"] = true,
+					["fadeoutalpha"] = 0.2000000029802322,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 140.4999849762868,
 						["x"] = 298.7519905968079,
 						["point"] = "BOTTOM",
 						["scale"] = 0.800000011920929,
 					},
-					["version"] = 3,
 				},
 				["MAGE"] = {
-					["fadeout"] = true,
 					["fadeoutalpha"] = 0.2000000029802322,
 					["version"] = 3,
+					["fadeout"] = true,
 					["position"] = {
 						["y"] = 140.4999849762868,
 						["x"] = 298.7519905968079,
@@ -993,23 +994,23 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Etanhunt - Blackrock [PvP only]"] = {
-					["fadeout"] = true,
-					["fadeoutalpha"] = 0.2000000029802322,
-					["version"] = 3,
-					["position"] = {
-						["y"] = 140.4999849762868,
-						["x"] = 298.7519905968079,
-						["point"] = "BOTTOM",
-						["scale"] = 0.800000011920929,
-					},
-				},
 				["Acumii - Blackrock [PvP only]"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 89.50000188064905,
 						["x"] = -163.4998882210571,
 						["point"] = "CENTER",
+					},
+				},
+				["Etanhunt - Blackrock [PvP only]"] = {
+					["version"] = 3,
+					["fadeout"] = true,
+					["fadeoutalpha"] = 0.2000000029802322,
+					["position"] = {
+						["y"] = 140.4999849762868,
+						["x"] = 298.7519905968079,
+						["point"] = "BOTTOM",
+						["scale"] = 0.800000011920929,
 					},
 				},
 			},
@@ -1030,10 +1031,10 @@ Bartender4DB = {
 	},
 	["profiles"] = {
 		["Asummi - Blackrock [PvP only]"] = {
-			["snapping"] = 1,
 			["minimapIcon"] = {
 				["minimapPos"] = 342.9019014926319,
 			},
+			["snapping"] = 1,
 		},
 		["mk1"] = {
 			["snapping"] = 1,
@@ -1042,10 +1043,10 @@ Bartender4DB = {
 			},
 		},
 		["Default"] = {
+			["snapping"] = 1,
 			["minimapIcon"] = {
 				["minimapPos"] = 342.9019014926319,
 			},
-			["snapping"] = 1,
 		},
 		["MAGE"] = {
 			["snapping"] = 1,
@@ -1055,13 +1056,13 @@ Bartender4DB = {
 		},
 		["Fsfqfweff - Blackrock [PvP only]"] = {
 		},
+		["Acumii - Blackrock [PvP only]"] = {
+		},
 		["Etanhunt - Blackrock [PvP only]"] = {
 			["snapping"] = 1,
 			["minimapIcon"] = {
 				["minimapPos"] = 342.9019014926319,
 			},
-		},
-		["Acumii - Blackrock [PvP only]"] = {
 		},
 	},
 }

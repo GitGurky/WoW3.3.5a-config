@@ -1,7 +1,7 @@
 MACRO 16 "#0mArenaSaerch" INV_Misc_QuestionMark
 /targetenemyplayer [@arena2, noexists]
 /stopmacro [@arena2, noexists]
-/click [@focus, noexists] BT4Button98; click [@target, noexists] BT4Button99; click [] BT4Button100
+/click [@focus, noexists] BT4Button86; click [@target, noexists] BT4Button87; click [] BT4Button88
 END
 MACRO 17 "#1mFocus" INV_Misc_QuestionMark
 /focus [@target]
@@ -34,8 +34,8 @@ END
 MACRO 9 "#TPTP" Spell_Fire_SunKey
 /tptp
 END
-MACRO 29 "3v3 lf" Ability_Creature_Disease_04
-/5 dlock lf 3s
+MACRO 30 "#WA" Spell_Fire_SunKey
+/weakauras
 END
 MACRO 20 "ArenaIn" Ability_Vehicle_PlayerLoaded
 /run JoinBattlefield(1,1,1)
@@ -46,9 +46,7 @@ MACRO 14 "ArenaOut" Ability_Vehicle_LoadSelfCatapult
 /forfeit
 /run LeaveBattlefield()
 /tar Schembari
-END
-MACRO 22 "ArenaReg" Ability_Vehicle_RocketBoost
-/run JoinBattlefield(1,1,1)
+/clearfocus
 END
 MACRO 23 "BG1" INV_Misc_QuestionMark
 /script RepopMe()
@@ -72,13 +70,11 @@ END
 MACRO 26 "BG4" INV_Misc_QuestionMark
 /focus Asummi
 END
-MACRO 28 "chat" Spell_Shaman_Hex
-/5 I am looking for a good English speaker for educational conversations, in exchange for up-to-date Russia-Ukraine news
-END
 MACRO 15 "LF" Spell_unused2
 /join global
-/5 dlock lf 2s  my team
-/bg Destro lf shama or heal 2s
+/1 DLock lf 2s my team
+/bg DLock lf 2s my team
+/y DLock lf 2s my team
 END
 MACRO 11 "maunt" Ability_Mount_Dreadsteed
 /petpassive
@@ -87,19 +83,8 @@ MACRO 11 "maunt" Ability_Mount_Dreadsteed
 /use [@player] Detect Invisibility
 /use Dreadsteed
 END
-MACRO 27 "mmr lose" Ability_Creature_Cursed_03
-/join global
-/5 need partner for lowering mmr 2s
-END
 MACRO 12 "petAttack" Ability_Druid_ChallangingRoar
 /petattack [@mouseover, harm][]
-END
-MACRO 21 "petclick" INV_Misc_QuestionMark
-/dismount
-/petpassive
-/click  [mod:shift, @focus][@mouseover, harm][] BT4PetButton4
-/petattack [mod:shift, @focus][@mouseover, harm][]
-/use [mod:shift, @focus][@mouseover, harm][]Banish
 END
 MACRO 13 "petStay" Ability_Druid_Cower
 /petpassive
@@ -107,7 +92,4 @@ MACRO 13 "petStay" Ability_Druid_Cower
 END
 MACRO 8 "Reload" Spell_Nature_AstralRecal
 /reload
-END
-MACRO 30 "WA" INV_Misc_QuestionMark
-/weakauras
 END

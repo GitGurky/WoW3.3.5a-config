@@ -1,7 +1,7 @@
 BINDINGMODE 0
 bind BUTTON3 TOGGLEAUTORUN
 bind W CLICK BT4Button38:LeftButton
-bind UP NONE
+bind UP MOVEFORWARD
 bind S STRAFELEFT
 bind A CLICK BT4Button25:LeftButton
 bind D CLICK BT4Button28:LeftButton
