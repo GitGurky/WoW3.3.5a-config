@@ -7,7 +7,7 @@ Y: 0
 W: 900
 H: 520
 Frame: SpellBookFrame
-FrameLevel: 16
+FrameLevel: 19
 Anchor: LEFT
 X: 0
 Y: 67

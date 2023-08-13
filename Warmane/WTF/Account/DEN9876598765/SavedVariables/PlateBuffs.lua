@@ -14,22 +14,21 @@ PB_DB = {
 		["Fafhesifdj - Blackrock [PvP only]"] = "Default",
 		["Fsdfqfd - Blackrock [PvP only]"] = "Default",
 		["Wheretotem - Blackrock [PvP only]"] = "Default",
-		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
-		["Gadig - Blackrock [PvP only]"] = "Default",
 		["Testcloth - Blackrock [PvP only]"] = "Default",
+		["Gadig - Blackrock [PvP only]"] = "Default",
+		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
 		["Ffwefsf - Blackrock [PvP only]"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["intervalY"] = 0,
 			["watchCombatlog"] = false,
-			["showTotems"] = true,
+			["barOffsetY"] = 14,
 			["ignoreDefaultSpell"] = {
 				["Potion of Speed"] = true,
 				["Potion of Petrification"] = true,
 			},
 			["aboveTapped"] = false,
-			["iconSize2"] = 22,
 			["showCooldown"] = false,
 			["spellOpts"] = {
 				["Shadow Dance"] = {
@@ -115,8 +114,9 @@ PB_DB = {
 				},
 			},
 			["legacyCooldownTexture"] = false,
+			["iconSize2"] = 22,
 			["intervalX"] = 3,
-			["barOffsetY"] = 14,
+			["showTotems"] = true,
 		},
 	},
 }

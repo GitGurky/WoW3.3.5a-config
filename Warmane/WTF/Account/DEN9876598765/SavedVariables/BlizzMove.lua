@@ -15,8 +15,8 @@ BlizzMoveDB = {
 		["relativePoint"] = "LEFT",
 		["yOfs"] = 16.09865269615666,
 		["xOfs"] = 238.6173249086637,
-		["point"] = "LEFT",
 		["save"] = true,
+		["point"] = "LEFT",
 	},
 	["AuctionFrame"] = {
 		["save"] = true,
@@ -25,18 +25,7 @@ BlizzMoveDB = {
 	},
 	["GameMenuFrame"] = {
 	},
-	["InterfaceOptionsFrame"] = {
-		["default"] = {
-			["relativeTo"] = "UIParent",
-			["point"] = "CENTER",
-			["relativePoint"] = "CENTER",
-			["yOfs"] = 0,
-			["xOfs"] = 0,
-		},
-		["relativePoint"] = "BOTTOM",
-		["yOfs"] = -18.22246163834899,
-		["xOfs"] = 14.22227753990036,
-		["point"] = "BOTTOM",
+	["HelpFrame"] = {
 	},
 	["CharacterFrame"] = {
 		["default"] = {
@@ -84,8 +73,8 @@ BlizzMoveDB = {
 		["relativePoint"] = "CENTER",
 		["yOfs"] = 59.23457144555101,
 		["xOfs"] = -74.07390650000879,
-		["point"] = "CENTER",
 		["save"] = true,
+		["point"] = "CENTER",
 	},
 	["BankFrame"] = {
 	},
@@ -113,10 +102,10 @@ BlizzMoveDB = {
 		["relativePoint"] = "LEFT",
 		["yOfs"] = 46.12346618534816,
 		["xOfs"] = 3.160491652277422,
-		["point"] = "LEFT",
 		["save"] = false,
+		["point"] = "LEFT",
 	},
-	["KeyBindingFrame"] = {
+	["GossipFrame"] = {
 	},
 	["DressUpFrame"] = {
 		["default"] = {
@@ -133,12 +122,12 @@ BlizzMoveDB = {
 	},
 	["LFDParentFrame"] = {
 	},
-	["GuildBankFrame"] = {
-		["save"] = true,
+	["VideoOptionsFrame"] = {
 	},
 	["PlayerTalentFrame"] = {
 	},
-	["LootFrame"] = {
+	["GuildBankFrame"] = {
+		["save"] = true,
 	},
 	["SpellBookFrame"] = {
 		["default"] = {
@@ -153,11 +142,11 @@ BlizzMoveDB = {
 		["xOfs"] = 30.81481959685586,
 		["point"] = "LEFT",
 	},
-	["VideoOptionsFrame"] = {
+	["LootFrame"] = {
 	},
 	["ItemSocketingFrame"] = {
 	},
-	["GossipFrame"] = {
+	["KeyBindingFrame"] = {
 	},
 	["QuestFrame"] = {
 	},
@@ -166,6 +155,17 @@ BlizzMoveDB = {
 	["CalendarFrame"] = {
 		["save"] = true,
 	},
-	["HelpFrame"] = {
+	["InterfaceOptionsFrame"] = {
+		["default"] = {
+			["relativeTo"] = "UIParent",
+			["point"] = "CENTER",
+			["relativePoint"] = "CENTER",
+			["yOfs"] = 0,
+			["xOfs"] = 0,
+		},
+		["relativePoint"] = "BOTTOM",
+		["yOfs"] = -18.22246163834899,
+		["xOfs"] = 14.22227753990036,
+		["point"] = "BOTTOM",
 	},
 }

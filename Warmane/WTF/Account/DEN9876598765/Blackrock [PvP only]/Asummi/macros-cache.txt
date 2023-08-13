@@ -1,3 +1,21 @@
+MACRO 16777235 "." INV_Misc_QuestionMark
+/use [@mouseover, harm][] Corruption
+END
+MACRO 16777227 "." INV_Misc_QuestionMark
+/castsequence reset=5 Conflagrate, Shadowburn
+END
+MACRO 16777222 "." INV_Misc_QuestionMark
+#showtooltip [pet:Felhunter]Devour Magic; Shadow Ward
+/petpassive
+/use [mod: alt, @party1][mod: shift, @target][nomod, @player] Devour Magic
+/click BT4PetButton5
+END
+MACRO 16777230 "." INV_Misc_QuestionMark
+#showtooltip
+/stopcasting
+/cast [mod: shift] 
+/castsequence [] reset=8 !Shadowfury, Howl of Terror
+END
 MACRO 16777221 "." INV_Misc_QuestionMark
 #showtooltip Create Spellstone
 /use [pet:???, @player] Fire Shield
@@ -16,24 +34,6 @@ MACRO 16777231 "." INV_Misc_QuestionMark
 #showtooltip Death Coil
 /stopcasting
 /use [mod: shift, @focus][@mouseover, harm][] Death Coil
-END
-MACRO 16777235 "." INV_Misc_QuestionMark
-/use [@mouseover, harm][] Corruption
-END
-MACRO 16777227 "." INV_Misc_QuestionMark
-/castsequence reset=5 Conflagrate, Shadowburn
-END
-MACRO 16777222 "." INV_Misc_QuestionMark
-#showtooltip [pet:Felhunter]Devour Magic; Shadow Ward
-/petpassive
-/use [mod: alt, @party1][mod: shift, @target][nomod, @player] Devour Magic
-/click BT4PetButton5
-END
-MACRO 16777230 "." INV_Misc_QuestionMark
-#showtooltip
-/stopcasting
-/cast [mod: shift] 
-/castsequence [] reset=8 !Shadowfury, Howl of Terror
 END
 MACRO 16777218 "Armor" INV_Misc_QuestionMark
 #showtooltip

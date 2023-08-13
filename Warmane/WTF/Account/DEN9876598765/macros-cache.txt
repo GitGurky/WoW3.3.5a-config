@@ -72,9 +72,8 @@ MACRO 26 "BG4" INV_Misc_QuestionMark
 END
 MACRO 15 "LF" Spell_unused2
 /join global
-/1 DLock lf 2s my team
-/bg DLock lf 2s my team
-/y DLock lf 2s my team
+/1 DLock lf 2s my team (Discord)
+/y DLock lf 2s my team (Discord)
 END
 MACRO 11 "maunt" Ability_Mount_Dreadsteed
 /petpassive

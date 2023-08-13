@@ -46,8 +46,8 @@ Quartz3DB = {
 				["Default"] = {
 					["h"] = 20,
 					["texture"] = "Minimalist",
-					["y"] = 244.4695218931831,
-					["x"] = 552.7281397282605,
+					["y"] = 243.6794074601314,
+					["x"] = 553.5182716684456,
 				},
 			},
 		},
@@ -78,9 +78,9 @@ Quartz3DB = {
 		["Fafhesifdj - Blackrock [PvP only]"] = "Default",
 		["Fsdfqfd - Blackrock [PvP only]"] = "Default",
 		["Wheretotem - Blackrock [PvP only]"] = "Default",
-		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
-		["Gadig - Blackrock [PvP only]"] = "Default",
 		["Testcloth - Blackrock [PvP only]"] = "Default",
+		["Gadig - Blackrock [PvP only]"] = "Default",
+		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
 		["Ffwefsf - Blackrock [PvP only]"] = "Default",
 	},
 	["profiles"] = {

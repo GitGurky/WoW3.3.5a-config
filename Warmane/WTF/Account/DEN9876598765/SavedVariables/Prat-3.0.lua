@@ -34,10 +34,10 @@ Prat3DB = {
 		["Prat_Frames"] = {
 			["profiles"] = {
 				["Default"] = {
-					["initialized"] = true,
+					["minchatwidthdefault"] = 296.0000005470979,
 					["maxchatheightdefault"] = 400.0000054709792,
 					["maxchatwidthdefault"] = 608.0000503330083,
-					["minchatwidthdefault"] = 296.0000005470979,
+					["initialized"] = true,
 					["minchatheightdefault"] = 120.0000016412938,
 				},
 				["WARLOCK"] = {
@@ -70,8 +70,8 @@ Prat3DB = {
 		["Prat_Font"] = {
 			["profiles"] = {
 				["WARLOCK"] = {
-					["fontface"] = "Arial Narrow",
 					["rememberfont"] = true,
+					["fontface"] = "Arial Narrow",
 				},
 				["Default"] = {
 					["fontface"] = "Arial Narrow",
@@ -85,7 +85,7 @@ Prat3DB = {
 		},
 		["Prat_Paragraph"] = {
 		},
-		["Prat_ChannelNames"] = {
+		["Prat_UrlCopy"] = {
 		},
 		["Prat_Alias"] = {
 		},
@@ -95,9 +95,9 @@ Prat3DB = {
 		},
 		["Prat_Sounds"] = {
 		},
-		["Prat_ChannelSticky"] = {
+		["Prat_History"] = {
 		},
-		["Prat_ChatLog"] = {
+		["Prat_Timestamps"] = {
 		},
 		["Prat_PopupMessage"] = {
 		},
@@ -115,41 +115,43 @@ Prat3DB = {
 				},
 			},
 		},
-		["Prat_Timestamps"] = {
+		["Prat_ChatLog"] = {
 		},
-		["Prat_History"] = {
+		["Prat_ChannelSticky"] = {
 		},
 		["Prat_Buttons"] = {
 		},
 		["Prat_ServerNames"] = {
 		},
-		["Prat_UrlCopy"] = {
+		["Prat_ChannelNames"] = {
 		},
 	},
 	["profileKeys"] = {
+		["Etanhunt - Blackrock [PvP only]"] = "Default",
 		["Asummi - Blackrock [PvP only]"] = "Default",
+		["Hotwiffe - Blackrock [PvP only]"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["modules"] = {
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 			},
 		},
 		["WARLOCK"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["AltNames"] = 2,
+				["OriginalButtons"] = 2,
 				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
-				["ChatLog"] = 2,
 				["Alias"] = 2,
-				["OriginalButtons"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
 			},
 		},
 	},

@@ -28,10 +28,10 @@ ThreatPlatesDB = {
 			},
 		},
 		["Bloodstorm - Blackrock [PvP only]"] = {
-			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					20, -- [1]
@@ -45,10 +45,10 @@ ThreatPlatesDB = {
 			},
 		},
 		["Openchest - Blackrock [PvP only]"] = {
-			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
+			["welcome"] = true,
 		},
 		["Acumii - Blackrock [PvP only]"] = {
 			["spec"] = {
@@ -101,10 +101,10 @@ ThreatPlatesDB = {
 			},
 		},
 		["Fafhesifdj - Blackrock [PvP only]"] = {
+			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
-			["welcome"] = true,
 			["specInfo"] = {
 				{
 					15, -- [1]
@@ -118,16 +118,16 @@ ThreatPlatesDB = {
 			},
 		},
 		["Fsdfqfd - Blackrock [PvP only]"] = {
+			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
-			["welcome"] = true,
 		},
 		["Wheretotem - Blackrock [PvP only]"] = {
-			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
+			["welcome"] = true,
 			["specInfo"] = {
 				{
 					nil, -- [1]
@@ -141,7 +141,7 @@ ThreatPlatesDB = {
 				"Restoration", -- [3]
 			},
 		},
-		["Fsfqfweff - Blackrock [PvP only]"] = {
+		["Testcloth - Blackrock [PvP only]"] = {
 			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
@@ -162,17 +162,17 @@ ThreatPlatesDB = {
 				"Unholy", -- [3]
 			},
 		},
-		["Testcloth - Blackrock [PvP only]"] = {
+		["Fsfqfweff - Blackrock [PvP only]"] = {
 			["spec"] = {
 				["primary"] = false,
 			},
 			["welcome"] = true,
 		},
 		["Ffwefsf - Blackrock [PvP only]"] = {
-			["welcome"] = true,
 			["spec"] = {
 				["primary"] = false,
 			},
+			["welcome"] = true,
 		},
 	},
 	["profileKeys"] = {
@@ -185,87 +185,48 @@ ThreatPlatesDB = {
 		["Fafhesifdj - Blackrock [PvP only]"] = "Default",
 		["Fsdfqfd - Blackrock [PvP only]"] = "Default",
 		["Wheretotem - Blackrock [PvP only]"] = "Default",
-		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
-		["Gadig - Blackrock [PvP only]"] = "Default",
 		["Testcloth - Blackrock [PvP only]"] = "Default",
+		["Gadig - Blackrock [PvP only]"] = "Default",
+		["Fsfqfweff - Blackrock [PvP only]"] = "Default",
 		["Ffwefsf - Blackrock [PvP only]"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["nameplate"] = {
+				["toggle"] = {
+					["Totem"] = true,
+				},
 				["scale"] = {
 					["Elite"] = 0.8,
 					["Boss"] = 0.85,
 					["Target"] = 0.9,
-					["Neutral"] = 0.8,
 					["Normal"] = 0.8,
-				},
-				["toggle"] = {
-					["Totem"] = true,
+					["Neutral"] = 0.8,
 				},
 			},
 			["OldSetting"] = false,
-			["friendlyClass"] = true,
+			["allowClass"] = true,
 			["uniqueSettings"] = {
-				nil, -- [1]
-				nil, -- [2]
-				nil, -- [3]
-				nil, -- [4]
-				nil, -- [5]
-				nil, -- [6]
-				nil, -- [7]
-				nil, -- [8]
-				nil, -- [9]
-				nil, -- [10]
-				nil, -- [11]
-				nil, -- [12]
-				nil, -- [13]
-				nil, -- [14]
-				nil, -- [15]
-				nil, -- [16]
-				nil, -- [17]
-				nil, -- [18]
-				nil, -- [19]
-				nil, -- [20]
-				nil, -- [21]
-				nil, -- [22]
-				nil, -- [23]
-				nil, -- [24]
-				nil, -- [25]
-				nil, -- [26]
-				nil, -- [27]
-				nil, -- [28]
-				nil, -- [29]
-				nil, -- [30]
-				{
-				}, -- [31]
-				{
-				}, -- [32]
-				{
-				}, -- [33]
-				nil, -- [34]
-				nil, -- [35]
-				nil, -- [36]
-				{
-				}, -- [37]
-				nil, -- [38]
-				{
-				}, -- [39]
-				{
-				}, -- [40]
-				{
-				}, -- [41]
-				nil, -- [42]
-				nil, -- [43]
-				nil, -- [44]
-				nil, -- [45]
-				nil, -- [46]
-				{
-				}, -- [47]
-				{
-				}, -- [48]
-				{
-				}, -- [49]
+				[31] = {
+				},
+				[32] = {
+				},
+				[33] = {
+				},
+				[37] = {
+				},
+				[39] = {
+				},
+				[40] = {
+				},
+				[41] = {
+				},
+				[47] = {
+				},
+				[48] = {
+				},
+				[49] = {
+				},
 				["list"] = {
 					"Shadow Fiend", -- [1]
 					"Spirit Wolf", -- [2]
@@ -359,7 +320,7 @@ ThreatPlatesDB = {
 			["threat"] = {
 				["ON"] = false,
 			},
-			["allowClass"] = true,
+			["friendlyClass"] = true,
 			["totemSettings"] = {
 				["W1"] = {
 					false, -- [1]
@@ -403,13 +364,13 @@ ThreatPlatesDB = {
 				["F6"] = {
 					false, -- [1]
 				},
-				["F2"] = {
+				["W4"] = {
 					false, -- [1]
 				},
 				["F5"] = {
 					false, -- [1]
 				},
-				["W4"] = {
+				["F2"] = {
 					false, -- [1]
 				},
 			},
@@ -435,7 +396,15 @@ ThreatPlatesDB = {
 				},
 				[33] = {
 				},
+				[47] = {
+				},
 				[37] = {
+				},
+				[39] = {
+				},
+				[41] = {
+				},
+				[48] = {
 				},
 				["list"] = {
 					"Shadow Fiend", -- [1]
@@ -488,14 +457,6 @@ ThreatPlatesDB = {
 					"", -- [48]
 					"", -- [49]
 					"", -- [50]
-				},
-				[39] = {
-				},
-				[41] = {
-				},
-				[48] = {
-				},
-				[47] = {
 				},
 			},
 		},

@@ -3,6 +3,1169 @@ WeakAurasSaved = {
 	["login_squelch_time"] = 10,
 	["registered"] = {
 	},
+	["displays"] = {
+		["Backdraft 3"] = {
+			["xOffset"] = 35,
+			["mirror"] = false,
+			["untrigger"] = {
+			},
+			["regionType"] = "texture",
+			["blendMode"] = "ADD",
+			["parent"] = "Backdraft",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
+			["color"] = {
+				1, -- [1]
+				0.3882352941176471, -- [2]
+				0, -- [3]
+				0.3700000047683716, -- [4]
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["use_rotate"] = true,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["alphaType"] = "alphaPulse",
+					["colorB"] = 0,
+					["colorG"] = 0.6431372549019607,
+					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
+					["rotateType"] = "wobble",
+					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
+					["use_translate"] = false,
+					["use_alpha"] = false,
+					["translateType"] = "spiralandpulse",
+					["type"] = "custom",
+					["scaleType"] = "pulse",
+					["scaley"] = 1.100000023841858,
+					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
+					["use_color"] = true,
+					["alpha"] = 1,
+					["colorType"] = "pulseColor",
+					["y"] = 5,
+					["x"] = 5,
+					["use_scale"] = true,
+					["colorR"] = 1,
+					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
+					["rotate"] = 3,
+					["scalex"] = 1.100000023841858,
+					["duration"] = "2",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["unit"] = "player",
+				["useCount"] = true,
+				["count"] = "3",
+				["custom_hide"] = "timed",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Backdraft", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["selfPoint"] = "CENTER",
+			["id"] = "Backdraft 3",
+			["width"] = 70,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["discrete_rotation"] = 0,
+			["height"] = 70,
+			["rotate"] = true,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["yOffset"] = -100,
+		},
+		["Hot Streak"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Left", -- [1]
+				"Right", -- [2]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = 0,
+			["border"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["trigger"] = {
+				["names"] = {
+				},
+				["type"] = "aura",
+				["debuffType"] = "HELPFUL",
+				["unit"] = "player",
+			},
+			["frameStrata"] = 1,
+			["expanded"] = true,
+			["untrigger"] = {
+			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["borderEdge"] = "None",
+			["id"] = "Hot Streak",
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["regionType"] = "group",
+		},
+		["Right"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["mirror"] = true,
+			["yOffset"] = 0,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hot Streak",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Hot_Streak",
+			["untrigger"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "wobble",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Right",
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["custom_hide"] = "timed",
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Hot Streak", -- [1]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 150,
+			["discrete_rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["rotation"] = 0,
+			["height"] = 180,
+			["rotate"] = true,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["xOffset"] = 100,
+		},
+		["Mage Armor"] = {
+			["xOffset"] = -176.9874537454358,
+			["BFbackdrop"] = false,
+			["yOffset"] = -279.703730612816,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Mage Armor", -- [1]
+					"Ice Armor", -- [2]
+					"Molten Armor", -- [3]
+					"Fel Armor", -- [4]
+					"Demon Armor", -- [5]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 42,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["BFskin"] = "Blizzard",
+			["iconInset"] = 0,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["id"] = "Mage Armor",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["frameStrata"] = 1,
+			["width"] = 42,
+			["untrigger"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["BFgloss"] = 0,
+			["numTriggers"] = 1,
+			["inverse"] = false,
+			["stickyDuration"] = false,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Backdraft"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Backdraft 1", -- [1]
+				"Backdraft 2", -- [2]
+				"Backdraft 3", -- [3]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = 0,
+			["border"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["trigger"] = {
+				["names"] = {
+				},
+				["type"] = "aura",
+				["debuffType"] = "HELPFUL",
+				["unit"] = "player",
+			},
+			["frameStrata"] = 1,
+			["expanded"] = true,
+			["untrigger"] = {
+			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["borderEdge"] = "None",
+			["id"] = "Backdraft",
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["regionType"] = "group",
+		},
+		["Mage Burst"] = {
+			["xOffset"] = -177.7776907284206,
+			["BFbackdrop"] = false,
+			["yOffset"] = -279.3578421801688,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Ice Block", -- [1]
+					"Combustion", -- [2]
+					"Siphoned Power", -- [3]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 42,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 16,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["BFskin"] = "Blizzard",
+			["iconInset"] = 0,
+			["cooldown"] = true,
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["id"] = "Mage Burst",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["frameStrata"] = 1,
+			["width"] = 42,
+			["untrigger"] = {
+			},
+			["numTriggers"] = 1,
+			["BFgloss"] = 0,
+			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stickyDuration"] = false,
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["Nightfall-right"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["mirror"] = true,
+			["untrigger"] = {
+			},
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["yOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Nightfall",
+			["xOffset"] = 100,
+			["selfPoint"] = "CENTER",
+			["id"] = "Nightfall-right",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "pulse",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Shadow Trance", -- [1]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["anchorPoint"] = "CENTER",
+			["frameStrata"] = 1,
+			["width"] = 120,
+			["rotation"] = 0,
+			["discrete_rotation"] = 0,
+			["numTriggers"] = 1,
+			["desaturate"] = false,
+			["height"] = 150,
+			["rotate"] = true,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["parent"] = "Nightfall",
+		},
+		["Impact"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["mirror"] = false,
+			["yOffset"] = 100,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Impact",
+			["untrigger"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["preset"] = "pulse",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Impact",
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Impact", -- [1]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["width"] = 120,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["discrete_rotation"] = 0,
+			["height"] = 120,
+			["rotate"] = true,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["xOffset"] = 0,
+		},
+		["Backdraft 2"] = {
+			["color"] = {
+				1, -- [1]
+				0.3882352941176471, -- [2]
+				0, -- [3]
+				0.3700000047683716, -- [4]
+			},
+			["mirror"] = false,
+			["untrigger"] = {
+			},
+			["regionType"] = "texture",
+			["blendMode"] = "ADD",
+			["parent"] = "Backdraft",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
+			["xOffset"] = -35,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["use_rotate"] = true,
+					["duration"] = "2",
+					["scalex"] = 1.100000023841858,
+					["alphaType"] = "alphaPulse",
+					["colorB"] = 0,
+					["colorG"] = 0.6431372549019607,
+					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
+					["duration_type"] = "seconds",
+					["rotate"] = 3,
+					["use_translate"] = false,
+					["use_alpha"] = false,
+					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["type"] = "custom",
+					["translateType"] = "spiralandpulse",
+					["use_scale"] = true,
+					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
+					["use_color"] = true,
+					["alpha"] = 1,
+					["x"] = 5,
+					["y"] = 5,
+					["colorType"] = "pulseColor",
+					["scaley"] = 1.100000023841858,
+					["scaleType"] = "pulse",
+					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
+					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
+					["rotateType"] = "wobble",
+					["colorA"] = 1,
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+				["useCount"] = true,
+				["count"] = "2",
+				["custom_hide"] = "timed",
+				["countOperator"] = ">=",
+				["unit"] = "player",
+				["names"] = {
+					"Backdraft", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["selfPoint"] = "CENTER",
+			["id"] = "Backdraft 2",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 70,
+			["rotation"] = 0,
+			["discrete_rotation"] = 0,
+			["numTriggers"] = 1,
+			["anchorPoint"] = "CENTER",
+			["height"] = 70,
+			["rotate"] = true,
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["yOffset"] = -100,
+		},
+		["Backdraft 1"] = {
+			["color"] = {
+				1, -- [1]
+				0.3882352941176471, -- [2]
+				0, -- [3]
+				0.3700000047683716, -- [4]
+			},
+			["mirror"] = false,
+			["yOffset"] = -100,
+			["regionType"] = "texture",
+			["blendMode"] = "ADD",
+			["parent"] = "Backdraft",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
+			["untrigger"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["use_rotate"] = true,
+					["duration"] = "2",
+					["colorA"] = 1,
+					["alphaType"] = "alphaPulse",
+					["colorB"] = 0,
+					["colorG"] = 0.6431372549019607,
+					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
+					["rotateType"] = "wobble",
+					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
+					["use_translate"] = false,
+					["use_alpha"] = false,
+					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["type"] = "custom",
+					["scaleType"] = "pulse",
+					["use_color"] = true,
+					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
+					["scaley"] = 1.100000023841858,
+					["alpha"] = 1,
+					["colorType"] = "pulseColor",
+					["y"] = 5,
+					["x"] = 5,
+					["use_scale"] = true,
+					["translateType"] = "spiralandpulse",
+					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
+					["rotate"] = 3,
+					["duration_type"] = "seconds",
+					["scalex"] = 1.100000023841858,
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Backdraft 1",
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["custom_hide"] = "timed",
+				["type"] = "aura",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Backdraft", -- [1]
+				},
+				["event"] = "Health",
+				["unit"] = "player",
+			},
+			["width"] = 80,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["discrete_rotation"] = 0,
+			["height"] = 80,
+			["rotate"] = true,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["xOffset"] = 0,
+		},
+		["Nightfall-left"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["mirror"] = false,
+			["yOffset"] = 0,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["xOffset"] = -100,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Nightfall",
+			["untrigger"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "aura",
+				["unit"] = "player",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Shadow Trance", -- [1]
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["duration_type"] = "seconds",
+					["preset"] = "pulse",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["id"] = "Nightfall-left",
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["discrete_rotation"] = 0,
+			["anchorPoint"] = "CENTER",
+			["numTriggers"] = 1,
+			["width"] = 120,
+			["height"] = 150,
+			["rotate"] = true,
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["parent"] = "Nightfall",
+		},
+		["Left"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.75, -- [4]
+			},
+			["mirror"] = false,
+			["untrigger"] = {
+			},
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["parent"] = "Hot Streak",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Hot_Streak",
+			["xOffset"] = -100,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["preset"] = "wobble",
+					["type"] = "preset",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["trigger"] = {
+				["custom_hide"] = "timed",
+				["type"] = "aura",
+				["unit"] = "player",
+				["subeventSuffix"] = "_CAST_START",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+					"Hot Streak", -- [1]
+				},
+				["event"] = "Health",
+				["subeventPrefix"] = "SPELL",
+			},
+			["selfPoint"] = "CENTER",
+			["id"] = "Left",
+			["width"] = 150,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["rotation"] = 0,
+			["discrete_rotation"] = 0,
+			["numTriggers"] = 1,
+			["anchorPoint"] = "CENTER",
+			["height"] = 180,
+			["rotate"] = true,
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["yOffset"] = 0,
+		},
+		["Nightfall"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"Nightfall-left", -- [1]
+				"Nightfall-right", -- [2]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = 0,
+			["border"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+			},
+			["frameStrata"] = 1,
+			["regionType"] = "group",
+			["untrigger"] = {
+			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["id"] = "Nightfall",
+			["borderEdge"] = "None",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["expanded"] = false,
+		},
+	},
+	["frame"] = {
+		["xOffset"] = -16.57995552230727,
+		["width"] = 630.0000042400088,
+		["height"] = 491.9999909728844,
+		["yOffset"] = -167.2344398685024,
+	},
+	["tempIconCache"] = {
+		["Fel Armor"] = "Interface\\Icons\\Spell_Shadow_FelArmour",
+		["Ice Armor"] = "Interface\\Icons\\Spell_Frost_FrostArmor02",
+		["Combustion"] = "Interface\\Icons\\Spell_Fire_SealOfFire",
+		["Mage Armor"] = "Interface\\Icons\\Spell_MageArmor",
+		["Backdraft"] = "Interface\\Icons\\Ability_Warlock_Backdraft",
+		["Siphoned Power"] = "Interface\\Icons\\Spell_Shadow_ShadowandFlame",
+		["Ice Block"] = "Interface\\Icons\\Spell_Frost_Frost",
+		["Hot Streak"] = "Interface\\Icons\\Ability_Mage_HotStreak",
+		["Impact"] = "Interface\\Icons\\Spell_Fire_MeteorStorm",
+		["Demon Armor"] = "Interface\\Icons\\Spell_Shadow_RagingScream",
+		["Shadow Trance"] = "Interface\\Icons\\Spell_Shadow_Twilight",
+	},
 	["talent_cache"] = {
 		["HUNTER"] = {
 			[2.2] = {
@@ -153,9 +1316,9 @@ WeakAurasSaved = {
 				["name"] = "Cobra Strikes",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_CobraStrikes",
 			},
-			[3.27] = {
-				["name"] = "Hunting Party",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_HuntingParty",
+			[2.04] = {
+				["name"] = "Careful Aim",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_ZenArchery",
 			},
 			[2.11] = {
 				["name"] = "Improved Stings",
@@ -173,33 +1336,33 @@ WeakAurasSaved = {
 				["name"] = "Scatter Shot",
 				["icon"] = "Interface\\Icons\\Ability_GolemStormBolt",
 			},
-			[3.1] = {
-				["name"] = "Deflection",
-				["icon"] = "Interface\\Icons\\Ability_Parry",
+			[3.02] = {
+				["name"] = "Hawk Eye",
+				["icon"] = "Interface\\Icons\\Ability_TownWatch",
 			},
-			[3.21] = {
-				["name"] = "Thrill of the Hunt",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_ThrilloftheHunt",
+			[2.17] = {
+				["name"] = "Ranged Weapon Specialization",
+				["icon"] = "Interface\\Icons\\INV_Weapon_Rifle_06",
 			},
-			[3.19] = {
-				["name"] = "Expose Weakness",
-				["icon"] = "Interface\\Icons\\Ability_Rogue_FindWeakness",
+			[3.12] = {
+				["name"] = "T.N.T.",
+				["icon"] = "Interface\\Icons\\INV_Misc_Bomb_05",
 			},
-			[1.01] = {
-				["name"] = "Improved Aspect of the Hawk",
-				["icon"] = "Interface\\Icons\\Spell_Nature_RavenForm",
+			[1.2] = {
+				["name"] = "Invigoration",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_Invigeration",
 			},
-			[1.02] = {
-				["name"] = "Endurance Training",
-				["icon"] = "Interface\\Icons\\Spell_Nature_Reincarnation",
+			[1.06] = {
+				["name"] = "Improved Revive Pet",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_BeastSoothe",
 			},
 			[2.05] = {
 				["name"] = "Improved Hunter's Mark",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_SniperShot",
 			},
-			[1.17] = {
-				["name"] = "Ferocious Inspiration",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_FerociousInspiration",
+			[3.05] = {
+				["name"] = "Entrapment",
+				["icon"] = "Interface\\Icons\\Spell_Nature_StrangleVines",
 			},
 			[3.13] = {
 				["name"] = "Lock and Load",
@@ -209,9 +1372,9 @@ WeakAurasSaved = {
 				["name"] = "Frenzy",
 				["icon"] = "Interface\\Icons\\INV_Misc_MonsterClaw_03",
 			},
-			[2.22] = {
-				["name"] = "Rapid Recuperation",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_RapidRegeneration",
+			[2.18] = {
+				["name"] = "Piercing Shots",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_PiercingShots",
 			},
 			[2.14] = {
 				["name"] = "Readiness",
@@ -221,17 +1384,17 @@ WeakAurasSaved = {
 				["name"] = "Focused Aim",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_FocusedAim",
 			},
-			[1.22] = {
-				["name"] = "Longevity",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_Longevity",
+			[2.03] = {
+				["name"] = "Lethal Shots",
+				["icon"] = "Interface\\Icons\\Ability_SearingArrow",
 			},
 			[2.26] = {
 				["name"] = "Marked for Death",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_Assassinate",
 			},
-			[1.15] = {
-				["name"] = "Animal Handler",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_AnimalHandler",
+			[2.09] = {
+				["name"] = "Aimed Shot",
+				["icon"] = "Interface\\Icons\\INV_Spear_07",
 			},
 			[1.14] = {
 				["name"] = "Bestial Discipline",
@@ -241,21 +1404,21 @@ WeakAurasSaved = {
 				["name"] = "Improved Mend Pet",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_MendPet",
 			},
-			[1.23] = {
-				["name"] = "The Beast Within",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_BeastWithin",
+			[3.17] = {
+				["name"] = "Lightning Reflexes",
+				["icon"] = "Interface\\Icons\\Spell_Nature_Invisibilty",
 			},
 			[2.01] = {
 				["name"] = "Improved Concussive Shot",
 				["icon"] = "Interface\\Icons\\Spell_Frost_Stun",
 			},
-			[3.26] = {
-				["name"] = "Sniper Training",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_LongShots",
-			},
 			[3.18] = {
 				["name"] = "Resourcefulness",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_Resourcefulness",
+			},
+			[3.26] = {
+				["name"] = "Sniper Training",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_LongShots",
 			},
 			[1.09] = {
 				["name"] = "Unleashed Fury",
@@ -277,17 +1440,17 @@ WeakAurasSaved = {
 				["name"] = "Aspect Mastery",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_AspectMastery",
 			},
-			[3.17] = {
-				["name"] = "Lightning Reflexes",
-				["icon"] = "Interface\\Icons\\Spell_Nature_Invisibilty",
+			[1.23] = {
+				["name"] = "The Beast Within",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_BeastWithin",
 			},
-			[2.09] = {
-				["name"] = "Aimed Shot",
-				["icon"] = "Interface\\Icons\\INV_Spear_07",
+			[1.15] = {
+				["name"] = "Animal Handler",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_AnimalHandler",
 			},
-			[2.03] = {
-				["name"] = "Lethal Shots",
-				["icon"] = "Interface\\Icons\\Ability_SearingArrow",
+			[1.22] = {
+				["name"] = "Longevity",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_Longevity",
 			},
 			[3.22] = {
 				["name"] = "Master Tactician",
@@ -297,37 +1460,37 @@ WeakAurasSaved = {
 				["name"] = "Hunter vs. Wild",
 				["icon"] = "Interface\\Icons\\Ability_Hunter_HunterVsWild",
 			},
-			[2.18] = {
-				["name"] = "Piercing Shots",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_PiercingShots",
+			[2.22] = {
+				["name"] = "Rapid Recuperation",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_RapidRegeneration",
 			},
-			[3.05] = {
-				["name"] = "Entrapment",
-				["icon"] = "Interface\\Icons\\Spell_Nature_StrangleVines",
+			[1.17] = {
+				["name"] = "Ferocious Inspiration",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_FerociousInspiration",
 			},
-			[1.06] = {
-				["name"] = "Improved Revive Pet",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_BeastSoothe",
+			[1.02] = {
+				["name"] = "Endurance Training",
+				["icon"] = "Interface\\Icons\\Spell_Nature_Reincarnation",
 			},
-			[1.2] = {
-				["name"] = "Invigoration",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_Invigeration",
+			[1.01] = {
+				["name"] = "Improved Aspect of the Hawk",
+				["icon"] = "Interface\\Icons\\Spell_Nature_RavenForm",
 			},
-			[3.12] = {
-				["name"] = "T.N.T.",
-				["icon"] = "Interface\\Icons\\INV_Misc_Bomb_05",
+			[3.19] = {
+				["name"] = "Expose Weakness",
+				["icon"] = "Interface\\Icons\\Ability_Rogue_FindWeakness",
 			},
-			[2.17] = {
-				["name"] = "Ranged Weapon Specialization",
-				["icon"] = "Interface\\Icons\\INV_Weapon_Rifle_06",
+			[3.21] = {
+				["name"] = "Thrill of the Hunt",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_ThrilloftheHunt",
 			},
-			[3.02] = {
-				["name"] = "Hawk Eye",
-				["icon"] = "Interface\\Icons\\Ability_TownWatch",
+			[3.1] = {
+				["name"] = "Deflection",
+				["icon"] = "Interface\\Icons\\Ability_Parry",
 			},
-			[2.04] = {
-				["name"] = "Careful Aim",
-				["icon"] = "Interface\\Icons\\Ability_Hunter_ZenArchery",
+			[3.27] = {
+				["name"] = "Hunting Party",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_HuntingParty",
 			},
 		},
 		["WARRIOR"] = {
@@ -491,21 +1654,21 @@ WeakAurasSaved = {
 				["name"] = "Arcane Flows",
 				["icon"] = "Interface\\Icons\\Ability_Mage_PotentSpirit",
 			},
-			[3.27] = {
-				["name"] = "Chilled to the Bone",
-				["icon"] = "Interface\\Icons\\Ability_Mage_ChilledToTheBone",
+			[1.27] = {
+				["name"] = "Missile Barrage",
+				["icon"] = "Interface\\Icons\\Ability_Mage_MissileBarrage",
 			},
-			[3.1] = {
-				["name"] = "Improved Blizzard",
-				["icon"] = "Interface\\Icons\\Spell_Frost_IceStorm",
+			[3.02] = {
+				["name"] = "Improved Frostbolt",
+				["icon"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
 			},
-			[3.21] = {
-				["name"] = "Arctic Winds",
-				["icon"] = "Interface\\Icons\\Spell_Frost_ArcticWinds",
+			[2.17] = {
+				["name"] = "Blazing Speed",
+				["icon"] = "Interface\\Icons\\Spell_Fire_BurningSpeed",
 			},
-			[3.19] = {
-				["name"] = "Shattered Barrier",
-				["icon"] = "Interface\\Icons\\Ability_Mage_ShatterShield",
+			[3.12] = {
+				["name"] = "Frost Channeling",
+				["icon"] = "Interface\\Icons\\Spell_Frost_Stun",
 			},
 			[2.11] = {
 				["name"] = "Improved Scorch",
@@ -523,61 +1686,61 @@ WeakAurasSaved = {
 				["name"] = "Icy Veins",
 				["icon"] = "Interface\\Icons\\Spell_Frost_ColdHearted",
 			},
-			[3.17] = {
-				["name"] = "Cold as Ice",
-				["icon"] = "Interface\\Icons\\Ability_Mage_ColdAsIce",
+			[3.11] = {
+				["name"] = "Arctic Reach",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DarkRitual",
 			},
-			[1.02] = {
-				["name"] = "Arcane Focus",
-				["icon"] = "Interface\\Icons\\Spell_Holy_Devotion",
+			[1.06] = {
+				["name"] = "Arcane Concentration",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_ManaBurn",
 			},
-			[2.05] = {
-				["name"] = "Burning Determination",
-				["icon"] = "Interface\\Icons\\Spell_Fire_TotemOfWrath",
+			[2.02] = {
+				["name"] = "Incineration",
+				["icon"] = "Interface\\Icons\\Spell_Fire_FlameShock",
 			},
-			[2.18] = {
-				["name"] = "Fire Power",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Immolation",
-			},
-			[1.2] = {
-				["name"] = "Arcane Potency",
-				["icon"] = "Interface\\Icons\\Spell_Arcane_ArcanePotency",
-			},
-			[2.01] = {
-				["name"] = "Improved Fire Blast",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball",
-			},
-			[1.16] = {
-				["name"] = "Presence of Mind",
-				["icon"] = "Interface\\Icons\\Spell_Nature_EnchantArmor",
+			[2.22] = {
+				["name"] = "Fiery Payback",
+				["icon"] = "Interface\\Icons\\Ability_Mage_FieryPayback",
 			},
 			[3.13] = {
 				["name"] = "Shatter",
 				["icon"] = "Interface\\Icons\\Spell_Frost_FrostShock",
 			},
+			[2.05] = {
+				["name"] = "Burning Determination",
+				["icon"] = "Interface\\Icons\\Spell_Fire_TotemOfWrath",
+			},
 			[3.05] = {
 				["name"] = "Frost Warding",
 				["icon"] = "Interface\\Icons\\Spell_Frost_FrostWard",
 			},
-			[2.14] = {
-				["name"] = "Playing with Fire",
-				["icon"] = "Interface\\Icons\\Spell_Fire_PlayingWithFire",
+			[1.2] = {
+				["name"] = "Arcane Potency",
+				["icon"] = "Interface\\Icons\\Spell_Arcane_ArcanePotency",
 			},
-			[1.13] = {
-				["name"] = "Arcane Meditation",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_SiphonMana",
+			[1.16] = {
+				["name"] = "Presence of Mind",
+				["icon"] = "Interface\\Icons\\Spell_Nature_EnchantArmor",
 			},
-			[1.05] = {
-				["name"] = "Magic Absorption",
-				["icon"] = "Interface\\Icons\\Spell_Nature_AstralRecalGroup",
+			[2.09] = {
+				["name"] = "Pyroblast",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball02",
 			},
-			[2.26] = {
-				["name"] = "Hot Streak",
-				["icon"] = "Interface\\Icons\\Ability_Mage_HotStreak",
+			[1.17] = {
+				["name"] = "Arcane Mind",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_Charm",
+			},
+			[2.04] = {
+				["name"] = "Ignite",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Incinerate",
 			},
 			[2.03] = {
 				["name"] = "Improved Fireball",
 				["icon"] = "Interface\\Icons\\Spell_Fire_FlameBolt",
+			},
+			[2.26] = {
+				["name"] = "Hot Streak",
+				["icon"] = "Interface\\Icons\\Ability_Mage_HotStreak",
 			},
 			[1.22] = {
 				["name"] = "Arcane Power",
@@ -595,25 +1758,25 @@ WeakAurasSaved = {
 				["name"] = "Improved Blink",
 				["icon"] = "Interface\\Icons\\Spell_Arcane_Blink",
 			},
-			[1.3] = {
-				["name"] = "Arcane Barrage",
-				["icon"] = "Interface\\Icons\\Ability_Mage_ArcaneBarrage",
-			},
-			[3.26] = {
-				["name"] = "Enduring Winter",
-				["icon"] = "Interface\\Icons\\Spell_Frost_SummonWaterElemental_2",
+			[3.01] = {
+				["name"] = "Frostbite",
+				["icon"] = "Interface\\Icons\\Spell_Frost_FrostArmor",
 			},
 			[3.18] = {
 				["name"] = "Winter's Chill",
 				["icon"] = "Interface\\Icons\\Spell_Frost_ChillingBlast",
 			},
+			[3.26] = {
+				["name"] = "Enduring Winter",
+				["icon"] = "Interface\\Icons\\Spell_Frost_SummonWaterElemental_2",
+			},
 			[2.28] = {
 				["name"] = "Living Bomb",
 				["icon"] = "Interface\\Icons\\Ability_Mage_LivingBomb",
 			},
-			[3.01] = {
-				["name"] = "Frostbite",
-				["icon"] = "Interface\\Icons\\Spell_Frost_FrostArmor",
+			[1.3] = {
+				["name"] = "Arcane Barrage",
+				["icon"] = "Interface\\Icons\\Ability_Mage_ArcaneBarrage",
 			},
 			[2.24] = {
 				["name"] = "Firestarter",
@@ -627,17 +1790,17 @@ WeakAurasSaved = {
 				["name"] = "Spell Impact",
 				["icon"] = "Interface\\Icons\\Spell_Nature_WispSplode",
 			},
-			[2.04] = {
-				["name"] = "Ignite",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Incinerate",
+			[1.05] = {
+				["name"] = "Magic Absorption",
+				["icon"] = "Interface\\Icons\\Spell_Nature_AstralRecalGroup",
 			},
-			[1.17] = {
-				["name"] = "Arcane Mind",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_Charm",
+			[1.13] = {
+				["name"] = "Arcane Meditation",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_SiphonMana",
 			},
-			[2.09] = {
-				["name"] = "Pyroblast",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball02",
+			[2.14] = {
+				["name"] = "Playing with Fire",
+				["icon"] = "Interface\\Icons\\Spell_Fire_PlayingWithFire",
 			},
 			[3.22] = {
 				["name"] = "Empowered Frostbolt",
@@ -647,37 +1810,37 @@ WeakAurasSaved = {
 				["name"] = "Cold Snap",
 				["icon"] = "Interface\\Icons\\Spell_Frost_WizardMark",
 			},
-			[2.22] = {
-				["name"] = "Fiery Payback",
-				["icon"] = "Interface\\Icons\\Ability_Mage_FieryPayback",
+			[2.18] = {
+				["name"] = "Fire Power",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Immolation",
 			},
-			[2.02] = {
-				["name"] = "Incineration",
-				["icon"] = "Interface\\Icons\\Spell_Fire_FlameShock",
+			[2.01] = {
+				["name"] = "Improved Fire Blast",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball",
 			},
-			[1.06] = {
-				["name"] = "Arcane Concentration",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_ManaBurn",
+			[1.02] = {
+				["name"] = "Arcane Focus",
+				["icon"] = "Interface\\Icons\\Spell_Holy_Devotion",
 			},
-			[3.11] = {
-				["name"] = "Arctic Reach",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_DarkRitual",
+			[3.17] = {
+				["name"] = "Cold as Ice",
+				["icon"] = "Interface\\Icons\\Ability_Mage_ColdAsIce",
 			},
-			[3.12] = {
-				["name"] = "Frost Channeling",
-				["icon"] = "Interface\\Icons\\Spell_Frost_Stun",
+			[3.19] = {
+				["name"] = "Shattered Barrier",
+				["icon"] = "Interface\\Icons\\Ability_Mage_ShatterShield",
 			},
-			[2.17] = {
-				["name"] = "Blazing Speed",
-				["icon"] = "Interface\\Icons\\Spell_Fire_BurningSpeed",
+			[3.21] = {
+				["name"] = "Arctic Winds",
+				["icon"] = "Interface\\Icons\\Spell_Frost_ArcticWinds",
 			},
-			[3.02] = {
-				["name"] = "Improved Frostbolt",
-				["icon"] = "Interface\\Icons\\Spell_Frost_FrostBolt02",
+			[3.1] = {
+				["name"] = "Improved Blizzard",
+				["icon"] = "Interface\\Icons\\Spell_Frost_IceStorm",
 			},
-			[1.27] = {
-				["name"] = "Missile Barrage",
-				["icon"] = "Interface\\Icons\\Ability_Mage_MissileBarrage",
+			[3.27] = {
+				["name"] = "Chilled to the Bone",
+				["icon"] = "Interface\\Icons\\Ability_Mage_ChilledToTheBone",
 			},
 		},
 		["PRIEST"] = {
@@ -831,9 +1994,9 @@ WeakAurasSaved = {
 				["name"] = "Death's Embrace",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathsEmbrace",
 			},
-			[1.17] = {
-				["name"] = "Improved Felhunter",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_SummonFelHunter",
+			[1.27] = {
+				["name"] = "Everlasting Affliction",
+				["icon"] = "Interface\\Icons\\Ability_Warlock_EverlastingAffliction",
 			},
 			[2.11] = {
 				["name"] = "Demonic Aegis",
@@ -851,33 +2014,33 @@ WeakAurasSaved = {
 				["name"] = "Intensity",
 				["icon"] = "Interface\\Icons\\Spell_Fire_LavaSpawn",
 			},
-			[3.1] = {
-				["name"] = "Destructive Reach",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_CorpseExplode",
+			[3.02] = {
+				["name"] = "Bane",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathPact",
 			},
-			[3.19] = {
-				["name"] = "Pyroclasm",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Volcano",
+			[2.04] = {
+				["name"] = "Fel Synergy",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_FelMending",
 			},
-			[3.17] = {
-				["name"] = "Conflagrate",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball",
+			[3.11] = {
+				["name"] = "Improved Searing Pain",
+				["icon"] = "Interface\\Icons\\Spell_Fire_SoulBurn",
 			},
-			[2.1] = {
-				["name"] = "Fel Domination",
-				["icon"] = "Interface\\Icons\\Spell_Nature_RemoveCurse",
+			[3.21] = {
+				["name"] = "Improved Soul Leech",
+				["icon"] = "Interface\\Icons\\Ability_Warlock_ImprovedSoulLeech",
 			},
-			[1.02] = {
-				["name"] = "Suppression",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_UnsummonBuilding",
+			[1.06] = {
+				["name"] = "Improved Life Tap",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_BurningSpirit",
 			},
 			[2.05] = {
 				["name"] = "Improved Health Funnel",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_LifeDrain",
 			},
-			[3.12] = {
-				["name"] = "Backlash",
-				["icon"] = "Interface\\Icons\\Spell_Fire_PlayingWithFire",
+			[3.05] = {
+				["name"] = "Cataclysm",
+				["icon"] = "Interface\\Icons\\Spell_Fire_WindsofWoe",
 			},
 			[1.2] = {
 				["name"] = "Contagion",
@@ -887,9 +2050,9 @@ WeakAurasSaved = {
 				["name"] = "Curse of Exhaustion",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_GrimWard",
 			},
-			[2.18] = {
-				["name"] = "Demonic Resilience",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_DemonicFortitude",
+			[2.22] = {
+				["name"] = "Decimation",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball02",
 			},
 			[2.21] = {
 				["name"] = "Demonic Tactics",
@@ -899,41 +2062,41 @@ WeakAurasSaved = {
 				["name"] = "Improved Imp",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_SummonImp",
 			},
-			[1.05] = {
-				["name"] = "Improved Drain Soul",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_Haunting",
+			[2.03] = {
+				["name"] = "Demonic Embrace",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_Metamorphosis",
 			},
 			[2.26] = {
 				["name"] = "Demonic Pact",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_DemonicPact",
 			},
-			[3.01] = {
-				["name"] = "Improved Shadow Bolt",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_ShadowBolt",
+			[2.09] = {
+				["name"] = "Soul Link",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_GatherShadows",
 			},
 			[1.14] = {
 				["name"] = "Shadow Embrace",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_ShadowEmbrace",
 			},
-			[1.1] = {
-				["name"] = "Amplify Curse",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_Contagion",
+			[3.01] = {
+				["name"] = "Improved Shadow Bolt",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_ShadowBolt",
 			},
-			[1.22] = {
-				["name"] = "Improved Howl of Terror",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+			[3.13] = {
+				["name"] = "Improved Immolate",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Immolation",
 			},
 			[1.15] = {
 				["name"] = "Siphon Life",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_Requiem",
 			},
-			[3.26] = {
-				["name"] = "Chaos Bolt",
-				["icon"] = "Interface\\Icons\\Ability_Warlock_ChaosBolt",
-			},
 			[3.18] = {
 				["name"] = "Soul Leech",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_SoulLeech_3",
+			},
+			[3.26] = {
+				["name"] = "Chaos Bolt",
+				["icon"] = "Interface\\Icons\\Ability_Warlock_ChaosBolt",
 			},
 			[2.01] = {
 				["name"] = "Improved Healthstone",
@@ -955,17 +2118,17 @@ WeakAurasSaved = {
 				["name"] = "Improved Fear",
 				["icon"] = "Interface\\Icons\\Spell_Shadow_Possession",
 			},
-			[3.13] = {
-				["name"] = "Improved Immolate",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Immolation",
+			[1.22] = {
+				["name"] = "Improved Howl of Terror",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathScream",
 			},
-			[2.09] = {
-				["name"] = "Soul Link",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_GatherShadows",
+			[1.1] = {
+				["name"] = "Amplify Curse",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_Contagion",
 			},
-			[2.03] = {
-				["name"] = "Demonic Embrace",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_Metamorphosis",
+			[1.05] = {
+				["name"] = "Improved Drain Soul",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_Haunting",
 			},
 			[3.22] = {
 				["name"] = "Backdraft",
@@ -975,1299 +2138,46 @@ WeakAurasSaved = {
 				["name"] = "Devastation",
 				["icon"] = "Interface\\Icons\\Spell_Fire_FlameShock",
 			},
-			[2.22] = {
-				["name"] = "Decimation",
-				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball02",
+			[2.18] = {
+				["name"] = "Demonic Resilience",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DemonicFortitude",
 			},
-			[3.05] = {
-				["name"] = "Cataclysm",
-				["icon"] = "Interface\\Icons\\Spell_Fire_WindsofWoe",
+			[3.12] = {
+				["name"] = "Backlash",
+				["icon"] = "Interface\\Icons\\Spell_Fire_PlayingWithFire",
 			},
-			[1.06] = {
-				["name"] = "Improved Life Tap",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_BurningSpirit",
+			[1.02] = {
+				["name"] = "Suppression",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_UnsummonBuilding",
 			},
-			[3.21] = {
-				["name"] = "Improved Soul Leech",
-				["icon"] = "Interface\\Icons\\Ability_Warlock_ImprovedSoulLeech",
+			[2.1] = {
+				["name"] = "Fel Domination",
+				["icon"] = "Interface\\Icons\\Spell_Nature_RemoveCurse",
 			},
-			[3.11] = {
-				["name"] = "Improved Searing Pain",
-				["icon"] = "Interface\\Icons\\Spell_Fire_SoulBurn",
+			[3.17] = {
+				["name"] = "Conflagrate",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Fireball",
 			},
-			[2.04] = {
-				["name"] = "Fel Synergy",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_FelMending",
+			[3.19] = {
+				["name"] = "Pyroclasm",
+				["icon"] = "Interface\\Icons\\Spell_Fire_Volcano",
 			},
-			[3.02] = {
-				["name"] = "Bane",
-				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathPact",
+			[3.1] = {
+				["name"] = "Destructive Reach",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_CorpseExplode",
 			},
-			[1.27] = {
-				["name"] = "Everlasting Affliction",
-				["icon"] = "Interface\\Icons\\Ability_Warlock_EverlastingAffliction",
+			[1.17] = {
+				["name"] = "Improved Felhunter",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_SummonFelHunter",
 			},
 		},
-		["PALADIN"] = {
+		["DEATHKNIGHT"] = {
 		},
 		["DRUID"] = {
 		},
 		["ROGUE"] = {
 		},
-		["DEATHKNIGHT"] = {
-		},
-	},
-	["frame"] = {
-		["xOffset"] = -16.57995552230727,
-		["yOffset"] = -167.2344398685024,
-		["height"] = 491.9999909728844,
-		["width"] = 630.0000042400088,
-	},
-	["tempIconCache"] = {
-		["Fel Armor"] = "Interface\\Icons\\Spell_Shadow_FelArmour",
-		["Ice Armor"] = "Interface\\Icons\\Spell_Frost_FrostArmor02",
-		["Combustion"] = "Interface\\Icons\\Spell_Fire_SealOfFire",
-		["Mage Armor"] = "Interface\\Icons\\Spell_MageArmor",
-		["Backdraft"] = "Interface\\Icons\\Ability_Warlock_Backdraft",
-		["Siphoned Power"] = "Interface\\Icons\\Spell_Shadow_ShadowandFlame",
-		["Ice Block"] = "Interface\\Icons\\Spell_Frost_Frost",
-		["Shadow Trance"] = "Interface\\Icons\\Spell_Shadow_Twilight",
-		["Impact"] = "Interface\\Icons\\Spell_Fire_MeteorStorm",
-		["Demon Armor"] = "Interface\\Icons\\Spell_Shadow_RagingScream",
-		["Hot Streak"] = "Interface\\Icons\\Ability_Mage_HotStreak",
-	},
-	["displays"] = {
-		["Backdraft 3"] = {
-			["xOffset"] = 35,
-			["mirror"] = false,
-			["untrigger"] = {
-			},
-			["regionType"] = "texture",
-			["blendMode"] = "ADD",
-			["yOffset"] = -100,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
-			["color"] = {
-				1, -- [1]
-				0.3882352941176471, -- [2]
-				0, -- [3]
-				0.3700000047683716, -- [4]
-			},
-			["selfPoint"] = "CENTER",
-			["id"] = "Backdraft 3",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
-					["use_rotate"] = true,
-					["duration_type"] = "seconds",
-					["duration"] = "2",
-					["alphaType"] = "alphaPulse",
-					["colorB"] = 0,
-					["colorG"] = 0.6431372549019607,
-					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
-					["scalex"] = 1.100000023841858,
-					["rotate"] = 3,
-					["use_translate"] = false,
-					["use_alpha"] = false,
-					["translateType"] = "spiralandpulse",
-					["type"] = "custom",
-					["colorR"] = 1,
-					["use_scale"] = true,
-					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
-					["use_color"] = true,
-					["alpha"] = 1,
-					["x"] = 5,
-					["y"] = 5,
-					["colorType"] = "pulseColor",
-					["scaley"] = 1.100000023841858,
-					["scaleType"] = "pulse",
-					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
-					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
-					["rotateType"] = "wobble",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["event"] = "Health",
-				["unit"] = "player",
-				["useCount"] = true,
-				["count"] = "3",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Backdraft", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
-				["custom_hide"] = "timed",
-			},
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["width"] = 70,
-			["height"] = 70,
-			["rotate"] = true,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["parent"] = "Backdraft",
-		},
-		["Nightfall"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"Nightfall-left", -- [1]
-				"Nightfall-right", -- [2]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
-			["border"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["trigger"] = {
-				["names"] = {
-				},
-				["type"] = "aura",
-				["debuffType"] = "HELPFUL",
-				["unit"] = "player",
-			},
-			["frameStrata"] = 1,
-			["expanded"] = false,
-			["untrigger"] = {
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["borderEdge"] = "None",
-			["id"] = "Nightfall",
-			["load"] = {
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["regionType"] = "group",
-		},
-		["New 2"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["sequence"] = 1,
-			["untrigger"] = {
-			},
-			["scale"] = 1,
-			["regionType"] = "model",
-			["border"] = false,
-			["borderEdge"] = "None",
-			["anchorPoint"] = "CENTER",
-			["model_x"] = 0,
-			["xOffset"] = 0,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["borderOffset"] = 5,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["model_path"] = "SPELLS/Fire_PreCast_Uber_Hand.m2",
-			["id"] = "New 2",
-			["model_z"] = 0,
-			["advance"] = true,
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Backdraft", -- [1]
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["model_y"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 250,
-			["rotation"] = 0,
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["height"] = 250,
-			["borderSize"] = 16,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["yOffset"] = -100,
-		},
-		["Right"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.75, -- [4]
-			},
-			["mirror"] = true,
-			["yOffset"] = 0,
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["xOffset"] = 100,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Hot_Streak",
-			["untrigger"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["subeventPrefix"] = "SPELL",
-				["subeventSuffix"] = "_CAST_START",
-				["names"] = {
-					"Hot Streak", -- [1]
-				},
-				["debuffType"] = "HELPFUL",
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-					["preset"] = "wobble",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["id"] = "Right",
-			["discrete_rotation"] = 0,
-			["frameStrata"] = 1,
-			["width"] = 150,
-			["rotation"] = 0,
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["desaturate"] = false,
-			["height"] = 180,
-			["rotate"] = true,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["parent"] = "Hot Streak",
-		},
-		["Mage Armor"] = {
-			["xOffset"] = -176.9874537454358,
-			["BFbackdrop"] = false,
-			["yOffset"] = -279.703730612816,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["useTooltip"] = false,
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Mage Armor", -- [1]
-					"Ice Armor", -- [2]
-					"Molten Armor", -- [3]
-					"Fel Armor", -- [4]
-					"Demon Armor", -- [5]
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 42,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 12,
-			["displayStacks"] = "%s",
-			["regionType"] = "icon",
-			["BFskin"] = "Blizzard",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["id"] = "Mage Armor",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["width"] = 42,
-			["BFgloss"] = 0,
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["untrigger"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["iconInset"] = 0,
-		},
-		["Backdraft"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"Backdraft 1", -- [1]
-				"Backdraft 2", -- [2]
-				"Backdraft 3", -- [3]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
-			["border"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-			},
-			["frameStrata"] = 1,
-			["regionType"] = "group",
-			["untrigger"] = {
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["id"] = "Backdraft",
-			["borderEdge"] = "None",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["expanded"] = true,
-		},
-		["Left"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.75, -- [4]
-			},
-			["mirror"] = false,
-			["untrigger"] = {
-			},
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["yOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Hot_Streak",
-			["xOffset"] = -100,
-			["selfPoint"] = "CENTER",
-			["id"] = "Left",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "preset",
-					["preset"] = "wobble",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["trigger"] = {
-				["subeventPrefix"] = "SPELL",
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["names"] = {
-					"Hot Streak", -- [1]
-				},
-				["debuffType"] = "HELPFUL",
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["discrete_rotation"] = 0,
-			["numTriggers"] = 1,
-			["width"] = 150,
-			["height"] = 180,
-			["rotate"] = true,
-			["load"] = {
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["parent"] = "Hot Streak",
-		},
-		["Nightfall-right"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.75, -- [4]
-			},
-			["mirror"] = true,
-			["untrigger"] = {
-			},
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["parent"] = "Nightfall",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Nightfall",
-			["xOffset"] = 100,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-					["preset"] = "pulse",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Shadow Trance", -- [1]
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["selfPoint"] = "CENTER",
-			["id"] = "Nightfall-right",
-			["width"] = 120,
-			["frameStrata"] = 1,
-			["desaturate"] = false,
-			["rotation"] = 0,
-			["discrete_rotation"] = 0,
-			["numTriggers"] = 1,
-			["anchorPoint"] = "CENTER",
-			["height"] = 150,
-			["rotate"] = true,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["yOffset"] = 0,
-		},
-		["Impact"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.75, -- [4]
-			},
-			["mirror"] = false,
-			["yOffset"] = 100,
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Impact",
-			["xOffset"] = 0,
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Impact", -- [1]
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["duration_type"] = "seconds",
-					["preset"] = "pulse",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["id"] = "Impact",
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["width"] = 120,
-			["rotation"] = 0,
-			["discrete_rotation"] = 0,
-			["numTriggers"] = 1,
-			["anchorPoint"] = "CENTER",
-			["height"] = 120,
-			["rotate"] = true,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["untrigger"] = {
-			},
-		},
-		["Backdraft 2"] = {
-			["color"] = {
-				1, -- [1]
-				0.3882352941176471, -- [2]
-				0, -- [3]
-				0.3700000047683716, -- [4]
-			},
-			["mirror"] = false,
-			["untrigger"] = {
-			},
-			["regionType"] = "texture",
-			["blendMode"] = "ADD",
-			["yOffset"] = -100,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
-			["xOffset"] = -35,
-			["selfPoint"] = "CENTER",
-			["id"] = "Backdraft 2",
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["use_rotate"] = true,
-					["duration"] = "2",
-					["colorB"] = 0,
-					["alphaType"] = "alphaPulse",
-					["colorA"] = 1,
-					["colorG"] = 0.6431372549019607,
-					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
-					["rotateType"] = "wobble",
-					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
-					["use_translate"] = false,
-					["use_alpha"] = false,
-					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
-					["type"] = "custom",
-					["scaleType"] = "pulse",
-					["use_color"] = true,
-					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
-					["scaley"] = 1.100000023841858,
-					["alpha"] = 1,
-					["colorType"] = "pulseColor",
-					["y"] = 5,
-					["x"] = 5,
-					["use_scale"] = true,
-					["translateType"] = "spiralandpulse",
-					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
-					["rotate"] = 3,
-					["duration_type"] = "seconds",
-					["scalex"] = 1.100000023841858,
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventSuffix"] = "_CAST_START",
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-				["useCount"] = true,
-				["count"] = "2",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Backdraft", -- [1]
-				},
-				["unit"] = "player",
-				["countOperator"] = ">=",
-				["custom_hide"] = "timed",
-			},
-			["anchorPoint"] = "CENTER",
-			["frameStrata"] = 1,
-			["width"] = 70,
-			["rotation"] = 0,
-			["discrete_rotation"] = 0,
-			["numTriggers"] = 1,
-			["desaturate"] = false,
-			["height"] = 70,
-			["rotate"] = true,
-			["load"] = {
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["parent"] = "Backdraft",
-		},
-		["Backdraft 1"] = {
-			["color"] = {
-				1, -- [1]
-				0.3882352941176471, -- [2]
-				0, -- [3]
-				0.3700000047683716, -- [4]
-			},
-			["mirror"] = false,
-			["yOffset"] = -100,
-			["regionType"] = "texture",
-			["blendMode"] = "ADD",
-			["xOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura13",
-			["untrigger"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["subeventPrefix"] = "SPELL",
-				["subeventSuffix"] = "_CAST_START",
-				["names"] = {
-					"Backdraft", -- [1]
-				},
-				["debuffType"] = "HELPFUL",
-				["event"] = "Health",
-				["custom_hide"] = "timed",
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["use_rotate"] = true,
-					["duration"] = "2",
-					["scalex"] = 1.100000023841858,
-					["alphaType"] = "alphaPulse",
-					["colorB"] = 0,
-					["colorG"] = 0.6431372549019607,
-					["alphaFunc"] = "return function(progress, start, delta)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return start + (((math.sin(angle) + 1)/2) * delta)\nend\n",
-					["duration_type"] = "seconds",
-					["rotate"] = 3,
-					["use_translate"] = false,
-					["use_alpha"] = false,
-					["scaleFunc"] = "return function(progress, startX, startY, scaleX, scaleY)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
-					["type"] = "custom",
-					["translateType"] = "spiralandpulse",
-					["use_scale"] = true,
-					["translateFunc"] = "return function(progress, startX, startY, deltaX, deltaY)\n  local angle = (progress + 0.25) * 2 * math.pi\n  return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\nend\n",
-					["scaley"] = 1.100000023841858,
-					["alpha"] = 1,
-					["x"] = 5,
-					["y"] = 5,
-					["colorType"] = "pulseColor",
-					["use_color"] = true,
-					["scaleType"] = "pulse",
-					["colorFunc"] = "return function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n  local angle = (progress * 2 * math.pi) - (math.pi / 2)\n  local newProgress = ((math.sin(angle) + 1)/2);\n  return r1 + (newProgress * (r2 - r1)),\n       g1 + (newProgress * (g2 - g1)),\n       b1 + (newProgress * (b2 - b1)),\n       a1 + (newProgress * (a2 - a1))\nend\n",
-					["rotateFunc"] = "return function(progress, start, delta)\n  local angle = progress * 2 * math.pi\n  return start + math.sin(angle) * delta\nend\n",
-					["rotateType"] = "wobble",
-					["colorA"] = 1,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["id"] = "Backdraft 1",
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["width"] = 80,
-			["height"] = 80,
-			["rotate"] = true,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["parent"] = "Backdraft",
-		},
-		["Nightfall-left"] = {
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.75, -- [4]
-			},
-			["mirror"] = false,
-			["yOffset"] = 0,
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["parent"] = "Nightfall",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\SpellActivationOverlays\\Nightfall",
-			["untrigger"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["preset"] = "pulse",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
-			["id"] = "Nightfall-left",
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "aura",
-				["subeventPrefix"] = "SPELL",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Shadow Trance", -- [1]
-				},
-				["event"] = "Health",
-				["unit"] = "player",
-			},
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["width"] = 120,
-			["discrete_rotation"] = 0,
-			["anchorPoint"] = "CENTER",
-			["numTriggers"] = 1,
-			["rotation"] = 0,
-			["height"] = 150,
-			["rotate"] = true,
-			["load"] = {
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["xOffset"] = -100,
-		},
-		["Mage Burst"] = {
-			["xOffset"] = -177.7776907284206,
-			["BFbackdrop"] = false,
-			["yOffset"] = -279.3578421801688,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["icon"] = true,
-			["fontFlags"] = "OUTLINE",
-			["useTooltip"] = false,
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "aura",
-				["unit"] = "player",
-				["subeventSuffix"] = "_CAST_START",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-					"Ice Block", -- [1]
-					"Combustion", -- [2]
-					"Siphoned Power", -- [3]
-				},
-				["event"] = "Health",
-				["subeventPrefix"] = "SPELL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 42,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 16,
-			["displayStacks"] = "%s",
-			["regionType"] = "icon",
-			["BFskin"] = "Blizzard",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = true,
-			["stickyDuration"] = false,
-			["id"] = "Mage Burst",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["frameStrata"] = 1,
-			["width"] = 42,
-			["BFgloss"] = 0,
-			["inverse"] = false,
-			["numTriggers"] = 1,
-			["untrigger"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["cooldown"] = true,
-			["iconInset"] = 0,
-		},
-		["Hot Streak"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"Left", -- [1]
-				"Right", -- [2]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
-			["border"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
-			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["debuffType"] = "HELPFUL",
-				["names"] = {
-				},
-			},
-			["frameStrata"] = 1,
-			["regionType"] = "group",
-			["untrigger"] = {
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["id"] = "Hot Streak",
-			["borderEdge"] = "None",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["expanded"] = true,
+		["PALADIN"] = {
 		},
 	},
 }
